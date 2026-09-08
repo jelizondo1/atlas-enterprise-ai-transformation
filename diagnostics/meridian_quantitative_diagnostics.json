@@ -1,0 +1,548 @@
+{
+  "overall": {
+    "cases": 250,
+    "total_disputed_amount_usd": 8352522.57,
+    "avg_disputed_amount_usd": 33410.09028,
+    "median_disputed_amount_usd": 19661.88,
+    "avg_handling_minutes": 23.984,
+    "median_handling_minutes": 21.0,
+    "avg_resolution_days": 6.8068,
+    "median_resolution_days": 2.9,
+    "sla_attainment": 0.62,
+    "reopen_rate": 0.14,
+    "missing_evidence_rate": 0.12,
+    "avg_systems_accessed": 3.344,
+    "avg_documents_reviewed": 2.96,
+    "other_reason_code_share": 0.156,
+    "escalation_share": 0.288
+  },
+  "by_system_reason_code": [
+    {
+      "system_reason_code": "PRICE_MISMATCH",
+      "cases": 48,
+      "case_share": 0.192,
+      "avg_disputed_amount_usd": 26062.441041666665,
+      "median_disputed_amount_usd": 16992.655,
+      "avg_handling_minutes": 16.979166666666668,
+      "avg_resolution_days": 3.7104166666666667,
+      "sla_attainment": 0.875,
+      "reopen_rate": 0.125,
+      "missing_evidence_rate": 0.0625,
+      "avg_systems_accessed": 3.5625,
+      "avg_documents_reviewed": 2.7291666666666665
+    },
+    {
+      "system_reason_code": "QUANTITY_MISMATCH",
+      "cases": 41,
+      "case_share": 0.164,
+      "avg_disputed_amount_usd": 28966.323170731706,
+      "median_disputed_amount_usd": 21270.58,
+      "avg_handling_minutes": 20.609756097560975,
+      "avg_resolution_days": 3.0585365853658537,
+      "sla_attainment": 0.9024390243902439,
+      "reopen_rate": 0.12195121951219512,
+      "missing_evidence_rate": 0.07317073170731707,
+      "avg_systems_accessed": 3.4634146341463414,
+      "avg_documents_reviewed": 3.073170731707317
+    },
+    {
+      "system_reason_code": "OTHER",
+      "cases": 39,
+      "case_share": 0.156,
+      "avg_disputed_amount_usd": 45967.912307692306,
+      "median_disputed_amount_usd": 27705.34,
+      "avg_handling_minutes": 31.76923076923077,
+      "avg_resolution_days": 8.371794871794872,
+      "sla_attainment": 0.48717948717948717,
+      "reopen_rate": 0.15384615384615385,
+      "missing_evidence_rate": 0.10256410256410256,
+      "avg_systems_accessed": 3.3846153846153846,
+      "avg_documents_reviewed": 2.9743589743589745
+    },
+    {
+      "system_reason_code": "MISSING_RECEIPT",
+      "cases": 34,
+      "case_share": 0.136,
+      "avg_disputed_amount_usd": 42000.836470588234,
+      "median_disputed_amount_usd": 25537.64,
+      "avg_handling_minutes": 24.352941176470587,
+      "avg_resolution_days": 10.105882352941176,
+      "sla_attainment": 0.35294117647058826,
+      "reopen_rate": 0.08823529411764706,
+      "missing_evidence_rate": 0.3235294117647059,
+      "avg_systems_accessed": 3.588235294117647,
+      "avg_documents_reviewed": 3.176470588235294
+    },
+    {
+      "system_reason_code": "DUPLICATE",
+      "cases": 31,
+      "case_share": 0.124,
+      "avg_disputed_amount_usd": 14757.168387096774,
+      "median_disputed_amount_usd": 8988.21,
+      "avg_handling_minutes": 11.064516129032258,
+      "avg_resolution_days": 3.6193548387096777,
+      "sla_attainment": 0.8387096774193549,
+      "reopen_rate": 0.0967741935483871,
+      "missing_evidence_rate": 0.0967741935483871,
+      "avg_systems_accessed": 2.2580645161290325,
+      "avg_documents_reviewed": 2.903225806451613
+    },
+    {
+      "system_reason_code": "FREIGHT",
+      "cases": 25,
+      "case_share": 0.1,
+      "avg_disputed_amount_usd": 20695.1624,
+      "median_disputed_amount_usd": 17165.0,
+      "avg_handling_minutes": 28.24,
+      "avg_resolution_days": 7.324,
+      "sla_attainment": 0.6,
+      "reopen_rate": 0.28,
+      "missing_evidence_rate": 0.04,
+      "avg_systems_accessed": 3.6,
+      "avg_documents_reviewed": 2.92
+    },
+    {
+      "system_reason_code": "CONTRACT_TERM",
+      "cases": 20,
+      "case_share": 0.08,
+      "avg_disputed_amount_usd": 62554.61,
+      "median_disputed_amount_usd": 34805.13,
+      "avg_handling_minutes": 42.85,
+      "avg_resolution_days": 12.95,
+      "sla_attainment": 0.15,
+      "reopen_rate": 0.15,
+      "missing_evidence_rate": 0.25,
+      "avg_systems_accessed": 3.5,
+      "avg_documents_reviewed": 3
+    },
+    {
+      "system_reason_code": "TAX",
+      "cases": 12,
+      "case_share": 0.048,
+      "avg_disputed_amount_usd": 38932.1375,
+      "median_disputed_amount_usd": 20891.5,
+      "avg_handling_minutes": 30.25,
+      "avg_resolution_days": 14.483333333333334,
+      "sla_attainment": 0.08333333333333333,
+      "reopen_rate": 0.16666666666666666,
+      "missing_evidence_rate": 0.0,
+      "avg_systems_accessed": 3.25,
+      "avg_documents_reviewed": 3
+    }
+  ],
+  "by_supplier": [
+    {
+      "supplier_name": "NorthStar Consumer Products",
+      "cases": 59,
+      "case_share": 0.236,
+      "avg_disputed_amount_usd": 46476.15118644068,
+      "median_disputed_amount_usd": 26740.45,
+      "avg_handling_minutes": 24.45762711864407,
+      "avg_resolution_days": 5.313559322033898,
+      "sla_attainment": 0.711864406779661,
+      "reopen_rate": 0.05084745762711865,
+      "missing_evidence_rate": 0.11864406779661017,
+      "avg_systems_accessed": 3.406779661016949,
+      "avg_documents_reviewed": 2.8983050847457625
+    },
+    {
+      "supplier_name": "Apex Industrial Supply",
+      "cases": 48,
+      "case_share": 0.192,
+      "avg_disputed_amount_usd": 34271.735625,
+      "median_disputed_amount_usd": 20077.114999999998,
+      "avg_handling_minutes": 24.666666666666668,
+      "avg_resolution_days": 5.7625,
+      "sla_attainment": 0.7083333333333334,
+      "reopen_rate": 0.125,
+      "missing_evidence_rate": 0.10416666666666667,
+      "avg_systems_accessed": 3.2916666666666665,
+      "avg_documents_reviewed": 2.875
+    },
+    {
+      "supplier_name": "Solara Imports",
+      "cases": 46,
+      "case_share": 0.184,
+      "avg_disputed_amount_usd": 35913.83456521739,
+      "median_disputed_amount_usd": 23197.405,
+      "avg_handling_minutes": 23.152173913043477,
+      "avg_resolution_days": 8.604347826086956,
+      "sla_attainment": 0.45652173913043476,
+      "reopen_rate": 0.2608695652173913,
+      "missing_evidence_rate": 0.2391304347826087,
+      "avg_systems_accessed": 3.282608695652174,
+      "avg_documents_reviewed": 3.152173913043478
+    },
+    {
+      "supplier_name": "BluePeak Logistics",
+      "cases": 28,
+      "case_share": 0.112,
+      "avg_disputed_amount_usd": 21191.286428571428,
+      "median_disputed_amount_usd": 15914.734999999999,
+      "avg_handling_minutes": 23.964285714285715,
+      "avg_resolution_days": 7.071428571428571,
+      "sla_attainment": 0.6071428571428571,
+      "reopen_rate": 0.10714285714285714,
+      "missing_evidence_rate": 0.10714285714285714,
+      "avg_systems_accessed": 3.357142857142857,
+      "avg_documents_reviewed": 2.857142857142857
+    },
+    {
+      "supplier_name": "Harbor Home Goods",
+      "cases": 28,
+      "case_share": 0.112,
+      "avg_disputed_amount_usd": 34815.375,
+      "median_disputed_amount_usd": 19370.86,
+      "avg_handling_minutes": 27.642857142857142,
+      "avg_resolution_days": 7.167857142857143,
+      "sla_attainment": 0.6428571428571429,
+      "reopen_rate": 0.21428571428571427,
+      "missing_evidence_rate": 0.03571428571428571,
+      "avg_systems_accessed": 3.5714285714285716,
+      "avg_documents_reviewed": 2.9642857142857144
+    },
+    {
+      "supplier_name": "Pinnacle Packaging",
+      "cases": 21,
+      "case_share": 0.084,
+      "avg_disputed_amount_usd": 16139.57380952381,
+      "median_disputed_amount_usd": 16889.88,
+      "avg_handling_minutes": 20.047619047619047,
+      "avg_resolution_days": 7.166666666666667,
+      "sla_attainment": 0.5714285714285714,
+      "reopen_rate": 0.09523809523809523,
+      "missing_evidence_rate": 0.047619047619047616,
+      "avg_systems_accessed": 3.4285714285714284,
+      "avg_documents_reviewed": 2.857142857142857
+    },
+    {
+      "supplier_name": "Evergreen Facilities",
+      "cases": 20,
+      "case_share": 0.08,
+      "avg_disputed_amount_usd": 20311.619,
+      "median_disputed_amount_usd": 12340.375,
+      "avg_handling_minutes": 21.9,
+      "avg_resolution_days": 8.33,
+      "sla_attainment": 0.55,
+      "reopen_rate": 0.15,
+      "missing_evidence_rate": 0.1,
+      "avg_systems_accessed": 3,
+      "avg_documents_reviewed": 3.15
+    }
+  ],
+  "by_analyst": [
+    {
+      "analyst_id": "AP-A05",
+      "cases": 41,
+      "case_share": 0.164,
+      "avg_disputed_amount_usd": 34215.49170731707,
+      "median_disputed_amount_usd": 17857.89,
+      "avg_handling_minutes": 26.70731707317073,
+      "avg_resolution_days": 7.014634146341463,
+      "sla_attainment": 0.6097560975609756,
+      "reopen_rate": 0.2682926829268293,
+      "missing_evidence_rate": 0.12195121951219512,
+      "avg_systems_accessed": 3.317073170731707,
+      "avg_documents_reviewed": 2.951219512195122
+    },
+    {
+      "analyst_id": "AP-A06",
+      "cases": 40,
+      "case_share": 0.16,
+      "avg_disputed_amount_usd": 31172.74425,
+      "median_disputed_amount_usd": 19506.2,
+      "avg_handling_minutes": 19.65,
+      "avg_resolution_days": 6.46,
+      "sla_attainment": 0.65,
+      "reopen_rate": 0.15,
+      "missing_evidence_rate": 0.125,
+      "avg_systems_accessed": 3.15,
+      "avg_documents_reviewed": 2.95
+    },
+    {
+      "analyst_id": "AP-A04",
+      "cases": 32,
+      "case_share": 0.128,
+      "avg_disputed_amount_usd": 29751.398125,
+      "median_disputed_amount_usd": 19322.515,
+      "avg_handling_minutes": 23.59375,
+      "avg_resolution_days": 7.20625,
+      "sla_attainment": 0.5625,
+      "reopen_rate": 0.0625,
+      "missing_evidence_rate": 0.03125,
+      "avg_systems_accessed": 3.46875,
+      "avg_documents_reviewed": 2.96875
+    },
+    {
+      "analyst_id": "AP-A07",
+      "cases": 29,
+      "case_share": 0.116,
+      "avg_disputed_amount_usd": 43539.10344827586,
+      "median_disputed_amount_usd": 23670.05,
+      "avg_handling_minutes": 35.827586206896555,
+      "avg_resolution_days": 7.113793103448276,
+      "sla_attainment": 0.5862068965517241,
+      "reopen_rate": 0.2413793103448276,
+      "missing_evidence_rate": 0.20689655172413793,
+      "avg_systems_accessed": 3.3448275862068964,
+      "avg_documents_reviewed": 3
+    },
+    {
+      "analyst_id": "AP-A08",
+      "cases": 29,
+      "case_share": 0.116,
+      "avg_disputed_amount_usd": 42132.87689655172,
+      "median_disputed_amount_usd": 20012.72,
+      "avg_handling_minutes": 20.448275862068964,
+      "avg_resolution_days": 6.272413793103448,
+      "sla_attainment": 0.6551724137931034,
+      "reopen_rate": 0.06896551724137931,
+      "missing_evidence_rate": 0.1724137931034483,
+      "avg_systems_accessed": 3.2758620689655173,
+      "avg_documents_reviewed": 2.793103448275862
+    },
+    {
+      "analyst_id": "AP-A03",
+      "cases": 28,
+      "case_share": 0.112,
+      "avg_disputed_amount_usd": 23381.753214285716,
+      "median_disputed_amount_usd": 19780.864999999998,
+      "avg_handling_minutes": 23.321428571428573,
+      "avg_resolution_days": 5.178571428571429,
+      "sla_attainment": 0.75,
+      "reopen_rate": 0.03571428571428571,
+      "missing_evidence_rate": 0.03571428571428571,
+      "avg_systems_accessed": 3.357142857142857,
+      "avg_documents_reviewed": 2.9642857142857144
+    },
+    {
+      "analyst_id": "AP-A02",
+      "cases": 26,
+      "case_share": 0.104,
+      "avg_disputed_amount_usd": 32413.373076923075,
+      "median_disputed_amount_usd": 21689.02,
+      "avg_handling_minutes": 23.923076923076923,
+      "avg_resolution_days": 8.257692307692308,
+      "sla_attainment": 0.5,
+      "reopen_rate": 0.15384615384615385,
+      "missing_evidence_rate": 0.19230769230769232,
+      "avg_systems_accessed": 3.5384615384615383,
+      "avg_documents_reviewed": 3.076923076923077
+    },
+    {
+      "analyst_id": "AP-A01",
+      "cases": 25,
+      "case_share": 0.1,
+      "avg_disputed_amount_usd": 30752.3472,
+      "median_disputed_amount_usd": 23076.93,
+      "avg_handling_minutes": 18.12,
+      "avg_resolution_days": 7.088,
+      "sla_attainment": 0.64,
+      "reopen_rate": 0.08,
+      "missing_evidence_rate": 0.08,
+      "avg_systems_accessed": 3.4,
+      "avg_documents_reviewed": 3
+    }
+  ],
+  "by_resolution": [
+    {
+      "resolution": "ESCALATE",
+      "cases": 72,
+      "case_share": 0.288,
+      "avg_disputed_amount_usd": 38149.42138888889,
+      "median_disputed_amount_usd": 25246.695,
+      "avg_handling_minutes": 28.180555555555557,
+      "avg_resolution_days": 10.713888888888889,
+      "sla_attainment": 0.3333333333333333,
+      "reopen_rate": 0.09722222222222222,
+      "missing_evidence_rate": 0.2222222222222222,
+      "avg_systems_accessed": 3.486111111111111,
+      "avg_documents_reviewed": 2.861111111111111
+    },
+    {
+      "resolution": "PAY_AS_INVOICED",
+      "cases": 45,
+      "case_share": 0.18,
+      "avg_disputed_amount_usd": 33917.010444444444,
+      "median_disputed_amount_usd": 23886.44,
+      "avg_handling_minutes": 24.8,
+      "avg_resolution_days": 6.762222222222222,
+      "sla_attainment": 0.6444444444444445,
+      "reopen_rate": 0.24444444444444444,
+      "missing_evidence_rate": 0.13333333333333333,
+      "avg_systems_accessed": 3.466666666666667,
+      "avg_documents_reviewed": 3.022222222222222
+    },
+    {
+      "resolution": "REJECT_DISPUTE",
+      "cases": 42,
+      "case_share": 0.168,
+      "avg_disputed_amount_usd": 26558.908333333333,
+      "median_disputed_amount_usd": 12342.564999999999,
+      "avg_handling_minutes": 15.095238095238095,
+      "avg_resolution_days": 4.261904761904762,
+      "sla_attainment": 0.7857142857142857,
+      "reopen_rate": 0.11904761904761904,
+      "missing_evidence_rate": 0.07142857142857142,
+      "avg_systems_accessed": 2.5476190476190474,
+      "avg_documents_reviewed": 2.880952380952381
+    },
+    {
+      "resolution": "PARTIAL_ADJUSTMENT",
+      "cases": 38,
+      "case_share": 0.152,
+      "avg_disputed_amount_usd": 22876.63842105263,
+      "median_disputed_amount_usd": 17563.205,
+      "avg_handling_minutes": 26.210526315789473,
+      "avg_resolution_days": 6.1421052631578945,
+      "sla_attainment": 0.6578947368421053,
+      "reopen_rate": 0.18421052631578946,
+      "missing_evidence_rate": 0.0,
+      "avg_systems_accessed": 3.4473684210526314,
+      "avg_documents_reviewed": 3
+    },
+    {
+      "resolution": "PAY_PO_AMOUNT",
+      "cases": 37,
+      "case_share": 0.148,
+      "avg_disputed_amount_usd": 40192.24054054054,
+      "median_disputed_amount_usd": 18931.39,
+      "avg_handling_minutes": 23.027027027027028,
+      "avg_resolution_days": 4.072972972972973,
+      "sla_attainment": 0.8378378378378378,
+      "reopen_rate": 0.08108108108108109,
+      "missing_evidence_rate": 0.08108108108108109,
+      "avg_systems_accessed": 3.6216216216216215,
+      "avg_documents_reviewed": 3.027027027027027
+    },
+    {
+      "resolution": "REQUEST_CREDIT_NOTE",
+      "cases": 16,
+      "case_share": 0.064,
+      "avg_disputed_amount_usd": 37974.965625000004,
+      "median_disputed_amount_usd": 25742.21,
+      "avg_handling_minutes": 23.0625,
+      "avg_resolution_days": 3.93125,
+      "sla_attainment": 0.8125,
+      "reopen_rate": 0.125,
+      "missing_evidence_rate": 0.125,
+      "avg_systems_accessed": 3.5625,
+      "avg_documents_reviewed": 3.1875
+    }
+  ],
+  "missing_evidence_impact": {
+    "yes": {
+      "cases": 30,
+      "avg_handling_minutes": 26.966666666666665,
+      "avg_resolution_days": 14.43,
+      "sla_attainment": 0.13333333333333333,
+      "reopen_rate": 0.2,
+      "avg_systems_accessed": 3.3
+    },
+    "no": {
+      "cases": 220,
+      "avg_handling_minutes": 23.577272727272728,
+      "avg_resolution_days": 5.7672727272727276,
+      "sla_attainment": 0.6863636363636364,
+      "reopen_rate": 0.1318181818181818,
+      "avg_systems_accessed": 3.35
+    }
+  },
+  "reopened_case_profile": {
+    "yes": {
+      "cases": 35,
+      "avg_handling_minutes": 40.2,
+      "avg_resolution_days": 10.222857142857142,
+      "sla_attainment": 0.37142857142857144,
+      "reopen_rate": 1.0,
+      "avg_systems_accessed": 3.3714285714285714
+    },
+    "no": {
+      "cases": 215,
+      "avg_handling_minutes": 21.344186046511627,
+      "avg_resolution_days": 6.250697674418604,
+      "sla_attainment": 0.6604651162790698,
+      "reopen_rate": 0.0,
+      "avg_systems_accessed": 3.33953488372093
+    }
+  },
+  "priority_supplier_profile": {
+    "yes": {
+      "cases": 105,
+      "avg_handling_minutes": 23.885714285714286,
+      "avg_resolution_days": 6.755238095238095,
+      "sla_attainment": 0.6,
+      "reopen_rate": 0.14285714285714285,
+      "avg_systems_accessed": 3.3523809523809525
+    },
+    "no": {
+      "cases": 145,
+      "avg_handling_minutes": 24.055172413793102,
+      "avg_resolution_days": 6.844137931034483,
+      "sla_attainment": 0.6344827586206897,
+      "reopen_rate": 0.13793103448275862,
+      "avg_systems_accessed": 3.3379310344827586
+    }
+  },
+  "system_complexity_bands": [
+    {
+      "complexity_band": "2 systems",
+      "cases": 46,
+      "avg_handling_minutes": 14.065217391304348,
+      "avg_resolution_days": 5.667391304347826,
+      "sla_attainment": 0.6956521739130435,
+      "reopen_rate": 0.15217391304347827
+    },
+    {
+      "complexity_band": "3 systems",
+      "cases": 80,
+      "avg_handling_minutes": 25.6875,
+      "avg_resolution_days": 6.82375,
+      "sla_attainment": 0.6125,
+      "reopen_rate": 0.125
+    },
+    {
+      "complexity_band": "4 systems",
+      "cases": 116,
+      "avg_handling_minutes": 25.82758620689655,
+      "avg_resolution_days": 7.084482758620689,
+      "sla_attainment": 0.603448275862069,
+      "reopen_rate": 0.13793103448275862
+    },
+    {
+      "complexity_band": "5+ systems",
+      "cases": 8,
+      "avg_handling_minutes": 37.25,
+      "avg_resolution_days": 9.1625,
+      "sla_attainment": 0.5,
+      "reopen_rate": 0.25
+    }
+  ],
+  "correlations": {
+    "systems_vs_handling_minutes": 0.2996994687916528,
+    "systems_vs_resolution_days": 0.0935832538885302,
+    "documents_vs_handling_minutes": 0.06358227705782014,
+    "documents_vs_resolution_days": 0.1537476044932166,
+    "handling_minutes_vs_resolution_days": 0.32849285963923214
+  },
+  "concentration": {
+    "top_3_suppliers": [
+      {
+        "supplier": "NorthStar Consumer Products",
+        "cases": 59,
+        "share": 0.236
+      },
+      {
+        "supplier": "Apex Industrial Supply",
+        "cases": 48,
+        "share": 0.192
+      },
+      {
+        "supplier": "Solara Imports",
+        "cases": 46,
+        "share": 0.184
+      }
+    ],
+    "top_3_case_share": 0.612
+  }
+}
