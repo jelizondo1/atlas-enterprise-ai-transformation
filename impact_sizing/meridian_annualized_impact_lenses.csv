@@ -1,0 +1,5 @@
+lens,annualized_cases,sample_share,avg_handling_minutes_lens,avg_handling_minutes_comparator,associated_handling_gap_minutes,associated_extra_active_hours,associated_fte_equivalent,claim_boundary
+Reopened cases,25200,0.14,40.2,21.3,18.9,7919,4.7,"Observed association, not a causal savings estimate."
+Missing evidence,21600,0.12,27.0,23.6,3.4,1220,0.7,Observed association; missing evidence may also proxy for intrinsically complex cases.
+4+ systems accessed,89280,0.496,26.6,21.4,5.1,7619,4.5,"Descriptive complexity association, not proof that system count causes handling time."
+Escalated cases,51840,0.288,28.2,22.3,5.9,5092,3.0,Escalation can be appropriate and value-protective; this quantifies workload association only.

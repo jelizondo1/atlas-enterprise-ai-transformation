@@ -1,0 +1,223 @@
+{
+  "assumptions": {
+    "annual_invoices": 1000000,
+    "annual_disputes": 180000,
+    "exception_rate": 0.18,
+    "annualization_sample_cases": 250,
+    "team_fte": 52,
+    "fully_loaded_cost_per_fte_usd": 85000,
+    "productive_hours_per_fte": 1700,
+    "warning": "Diagnostic lenses overlap. Associated burdens must not be summed and are not savings estimates."
+  },
+  "overall_current_state": {
+    "annual_active_handling_hours": 72000,
+    "active_handling_fte_equivalent": 42.4,
+    "annual_dispute_team_cost_usd": 4420000,
+    "team_fte_less_active_handling_fte": 9.6,
+    "interpretation": "The difference between team FTE and active-handling FTE is not waste; it can include supervision, waiting, follow-up, meetings, QA, administration, leave, and other work."
+  },
+  "diagnostic_lenses": [
+    {
+      "lens": "Reopened cases",
+      "annualized_cases": 25200,
+      "sample_share": 0.14,
+      "avg_handling_minutes_lens": 40.2,
+      "avg_handling_minutes_comparator": 21.3,
+      "associated_handling_gap_minutes": 18.9,
+      "associated_extra_active_hours": 7919,
+      "associated_fte_equivalent": 4.7,
+      "claim_boundary": "Observed association, not a causal savings estimate."
+    },
+    {
+      "lens": "Missing evidence",
+      "annualized_cases": 21600,
+      "sample_share": 0.12,
+      "avg_handling_minutes_lens": 27.0,
+      "avg_handling_minutes_comparator": 23.6,
+      "associated_handling_gap_minutes": 3.4,
+      "associated_extra_active_hours": 1220,
+      "associated_fte_equivalent": 0.7,
+      "avg_resolution_days_lens": 14.4,
+      "avg_resolution_days_comparator": 5.8,
+      "associated_resolution_gap_days": 8.7,
+      "claim_boundary": "Observed association; missing evidence may also proxy for intrinsically complex cases."
+    },
+    {
+      "lens": "4+ systems accessed",
+      "annualized_cases": 89280,
+      "sample_share": 0.496,
+      "avg_handling_minutes_lens": 26.6,
+      "avg_handling_minutes_comparator": 21.4,
+      "associated_handling_gap_minutes": 5.1,
+      "associated_extra_active_hours": 7619,
+      "associated_fte_equivalent": 4.5,
+      "claim_boundary": "Descriptive complexity association, not proof that system count causes handling time."
+    },
+    {
+      "lens": "Escalated cases",
+      "annualized_cases": 51840,
+      "sample_share": 0.288,
+      "avg_handling_minutes_lens": 28.2,
+      "avg_handling_minutes_comparator": 22.3,
+      "associated_handling_gap_minutes": 5.9,
+      "associated_extra_active_hours": 5092,
+      "associated_fte_equivalent": 3.0,
+      "claim_boundary": "Escalation can be appropriate and value-protective; this quantifies workload association only."
+    }
+  ],
+  "by_system_reason_code": [
+    {
+      "system_reason_code": "PRICE_MISMATCH",
+      "sample_cases": 48,
+      "annualized_cases": 34560,
+      "share_of_annual_cases": 0.192,
+      "avg_handling_minutes": 17.0,
+      "annualized_active_handling_hours": 9780,
+      "active_handling_fte_equivalent": 5.8,
+      "sla_attainment": 0.875,
+      "reopen_rate": 0.125
+    },
+    {
+      "system_reason_code": "QUANTITY_MISMATCH",
+      "sample_cases": 41,
+      "annualized_cases": 29520,
+      "share_of_annual_cases": 0.164,
+      "avg_handling_minutes": 20.6,
+      "annualized_active_handling_hours": 10140,
+      "active_handling_fte_equivalent": 6.0,
+      "sla_attainment": 0.9024,
+      "reopen_rate": 0.122
+    },
+    {
+      "system_reason_code": "OTHER",
+      "sample_cases": 39,
+      "annualized_cases": 28080,
+      "share_of_annual_cases": 0.156,
+      "avg_handling_minutes": 31.8,
+      "annualized_active_handling_hours": 14868,
+      "active_handling_fte_equivalent": 8.7,
+      "sla_attainment": 0.4872,
+      "reopen_rate": 0.1538
+    },
+    {
+      "system_reason_code": "MISSING_RECEIPT",
+      "sample_cases": 34,
+      "annualized_cases": 24480,
+      "share_of_annual_cases": 0.136,
+      "avg_handling_minutes": 24.4,
+      "annualized_active_handling_hours": 9936,
+      "active_handling_fte_equivalent": 5.8,
+      "sla_attainment": 0.3529,
+      "reopen_rate": 0.0882
+    },
+    {
+      "system_reason_code": "DUPLICATE",
+      "sample_cases": 31,
+      "annualized_cases": 22320,
+      "share_of_annual_cases": 0.124,
+      "avg_handling_minutes": 11.1,
+      "annualized_active_handling_hours": 4116,
+      "active_handling_fte_equivalent": 2.4,
+      "sla_attainment": 0.8387,
+      "reopen_rate": 0.0968
+    },
+    {
+      "system_reason_code": "FREIGHT",
+      "sample_cases": 25,
+      "annualized_cases": 18000,
+      "share_of_annual_cases": 0.1,
+      "avg_handling_minutes": 28.2,
+      "annualized_active_handling_hours": 8472,
+      "active_handling_fte_equivalent": 5.0,
+      "sla_attainment": 0.6,
+      "reopen_rate": 0.28
+    },
+    {
+      "system_reason_code": "CONTRACT_TERM",
+      "sample_cases": 20,
+      "annualized_cases": 14400,
+      "share_of_annual_cases": 0.08,
+      "avg_handling_minutes": 42.9,
+      "annualized_active_handling_hours": 10284,
+      "active_handling_fte_equivalent": 6.0,
+      "sla_attainment": 0.15,
+      "reopen_rate": 0.15
+    },
+    {
+      "system_reason_code": "TAX",
+      "sample_cases": 12,
+      "annualized_cases": 8640,
+      "share_of_annual_cases": 0.048,
+      "avg_handling_minutes": 30.2,
+      "annualized_active_handling_hours": 4356,
+      "active_handling_fte_equivalent": 2.6,
+      "sla_attainment": 0.0833,
+      "reopen_rate": 0.1667
+    }
+  ],
+  "by_supplier": [
+    {
+      "supplier": "NorthStar Consumer Products",
+      "annualized_cases": 42480,
+      "share_of_annual_cases": 0.236,
+      "avg_handling_minutes": 24.5,
+      "annualized_active_handling_hours": 17316,
+      "sla_attainment": 0.7119,
+      "reopen_rate": 0.0508
+    },
+    {
+      "supplier": "Apex Industrial Supply",
+      "annualized_cases": 34560,
+      "share_of_annual_cases": 0.192,
+      "avg_handling_minutes": 24.7,
+      "annualized_active_handling_hours": 14208,
+      "sla_attainment": 0.7083,
+      "reopen_rate": 0.125
+    },
+    {
+      "supplier": "Solara Imports",
+      "annualized_cases": 33120,
+      "share_of_annual_cases": 0.184,
+      "avg_handling_minutes": 23.2,
+      "annualized_active_handling_hours": 12780,
+      "sla_attainment": 0.4565,
+      "reopen_rate": 0.2609
+    },
+    {
+      "supplier": "BluePeak Logistics",
+      "annualized_cases": 20160,
+      "share_of_annual_cases": 0.112,
+      "avg_handling_minutes": 24.0,
+      "annualized_active_handling_hours": 8052,
+      "sla_attainment": 0.6071,
+      "reopen_rate": 0.1071
+    },
+    {
+      "supplier": "Harbor Home Goods",
+      "annualized_cases": 20160,
+      "share_of_annual_cases": 0.112,
+      "avg_handling_minutes": 27.6,
+      "annualized_active_handling_hours": 9288,
+      "sla_attainment": 0.6429,
+      "reopen_rate": 0.2143
+    },
+    {
+      "supplier": "Pinnacle Packaging",
+      "annualized_cases": 15120,
+      "share_of_annual_cases": 0.084,
+      "avg_handling_minutes": 20.0,
+      "annualized_active_handling_hours": 5052,
+      "sla_attainment": 0.5714,
+      "reopen_rate": 0.0952
+    },
+    {
+      "supplier": "Evergreen Facilities",
+      "annualized_cases": 14400,
+      "share_of_annual_cases": 0.08,
+      "avg_handling_minutes": 21.9,
+      "annualized_active_handling_hours": 5256,
+      "sla_attainment": 0.55,
+      "reopen_rate": 0.15
+    }
+  ]
+}
