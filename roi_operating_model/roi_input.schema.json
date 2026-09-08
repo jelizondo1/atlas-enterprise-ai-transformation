@@ -1,0 +1,582 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "scenario_id",
+    "mode",
+    "bundle_opportunity_ids",
+    "baseline",
+    "parameters",
+    "governance",
+    "evidence_registry"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "scenario_id": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "UNSIZED",
+        "ILLUSTRATIVE",
+        "MEASURED_INPUTS"
+      ]
+    },
+    "bundle_opportunity_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "const": [
+        "O01",
+        "O02",
+        "O05"
+      ]
+    },
+    "baseline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "annual_disputes",
+        "annual_handling_hours",
+        "productive_hours_per_fte",
+        "capacity_rate_usd_per_hour"
+      ],
+      "properties": {
+        "annual_disputes": {
+          "type": "string"
+        },
+        "annual_handling_hours": {
+          "type": "string"
+        },
+        "productive_hours_per_fte": {
+          "type": "string"
+        },
+        "capacity_rate_usd_per_hour": {
+          "type": "string"
+        }
+      },
+      "const": {
+        "annual_disputes": "180000",
+        "annual_handling_hours": "71952",
+        "productive_hours_per_fte": "1700",
+        "capacity_rate_usd_per_hour": "50"
+      }
+    },
+    "parameters": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "unique_eligible_annual_cases",
+        "baseline_bundle_minutes",
+        "intervention_bundle_minutes_including_review",
+        "steady_adoption_fraction",
+        "year1_adoption_fraction",
+        "annual_internal_maintenance_hours",
+        "implementation_cash_cost_usd",
+        "annual_incremental_run_cash_cost_usd",
+        "cash_realization_fraction"
+      ],
+      "properties": {
+        "unique_eligible_annual_cases": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "unit",
+            "status",
+            "source_ref",
+            "owner"
+          ],
+          "properties": {
+            "value": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[0-9]{1,13}(\\.[0-9]{1,12})?$"
+            },
+            "unit": {
+              "type": "string",
+              "const": "cases/year"
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "UNKNOWN",
+                "ILLUSTRATIVE",
+                "PILOT_MEASURED",
+                "APPROVED_PLANNING"
+              ]
+            },
+            "source_ref": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "owner": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "baseline_bundle_minutes": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "unit",
+            "status",
+            "source_ref",
+            "owner"
+          ],
+          "properties": {
+            "value": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[0-9]{1,13}(\\.[0-9]{1,12})?$"
+            },
+            "unit": {
+              "type": "string",
+              "const": "active minutes/eligible case"
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "UNKNOWN",
+                "ILLUSTRATIVE",
+                "PILOT_MEASURED",
+                "APPROVED_PLANNING"
+              ]
+            },
+            "source_ref": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "owner": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "intervention_bundle_minutes_including_review": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "unit",
+            "status",
+            "source_ref",
+            "owner"
+          ],
+          "properties": {
+            "value": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[0-9]{1,13}(\\.[0-9]{1,12})?$"
+            },
+            "unit": {
+              "type": "string",
+              "const": "active minutes/eligible case"
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "UNKNOWN",
+                "ILLUSTRATIVE",
+                "PILOT_MEASURED",
+                "APPROVED_PLANNING"
+              ]
+            },
+            "source_ref": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "owner": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "steady_adoption_fraction": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "unit",
+            "status",
+            "source_ref",
+            "owner"
+          ],
+          "properties": {
+            "value": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[0-9]{1,13}(\\.[0-9]{1,12})?$"
+            },
+            "unit": {
+              "type": "string",
+              "const": "fraction"
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "UNKNOWN",
+                "ILLUSTRATIVE",
+                "PILOT_MEASURED",
+                "APPROVED_PLANNING"
+              ]
+            },
+            "source_ref": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "owner": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "year1_adoption_fraction": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "unit",
+            "status",
+            "source_ref",
+            "owner"
+          ],
+          "properties": {
+            "value": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[0-9]{1,13}(\\.[0-9]{1,12})?$"
+            },
+            "unit": {
+              "type": "string",
+              "const": "fraction, annual average including ramp"
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "UNKNOWN",
+                "ILLUSTRATIVE",
+                "PILOT_MEASURED",
+                "APPROVED_PLANNING"
+              ]
+            },
+            "source_ref": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "owner": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "annual_internal_maintenance_hours": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "unit",
+            "status",
+            "source_ref",
+            "owner"
+          ],
+          "properties": {
+            "value": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[0-9]{1,13}(\\.[0-9]{1,12})?$"
+            },
+            "unit": {
+              "type": "string",
+              "const": "hours/year"
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "UNKNOWN",
+                "ILLUSTRATIVE",
+                "PILOT_MEASURED",
+                "APPROVED_PLANNING"
+              ]
+            },
+            "source_ref": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "owner": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "implementation_cash_cost_usd": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "unit",
+            "status",
+            "source_ref",
+            "owner"
+          ],
+          "properties": {
+            "value": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[0-9]{1,13}(\\.[0-9]{1,12})?$"
+            },
+            "unit": {
+              "type": "string",
+              "const": "USD, one time"
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "UNKNOWN",
+                "ILLUSTRATIVE",
+                "PILOT_MEASURED",
+                "APPROVED_PLANNING"
+              ]
+            },
+            "source_ref": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "owner": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "annual_incremental_run_cash_cost_usd": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "unit",
+            "status",
+            "source_ref",
+            "owner"
+          ],
+          "properties": {
+            "value": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[0-9]{1,13}(\\.[0-9]{1,12})?$"
+            },
+            "unit": {
+              "type": "string",
+              "const": "USD/year"
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "UNKNOWN",
+                "ILLUSTRATIVE",
+                "PILOT_MEASURED",
+                "APPROVED_PLANNING"
+              ]
+            },
+            "source_ref": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "owner": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "cash_realization_fraction": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "unit",
+            "status",
+            "source_ref",
+            "owner"
+          ],
+          "properties": {
+            "value": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[0-9]{1,13}(\\.[0-9]{1,12})?$"
+            },
+            "unit": {
+              "type": "string",
+              "const": "fraction of positive net capacity value"
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "UNKNOWN",
+                "ILLUSTRATIVE",
+                "PILOT_MEASURED",
+                "APPROVED_PLANNING"
+              ]
+            },
+            "source_ref": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "owner": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "governance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "unique_cohort_verified",
+        "bundle_time_nonoverlap_verified",
+        "quality_gate_passed",
+        "control_gate_passed",
+        "cash_realization_plan_approved",
+        "review_ref",
+        "realization_plan_ref"
+      ],
+      "properties": {
+        "unique_cohort_verified": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "bundle_time_nonoverlap_verified": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "quality_gate_passed": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "control_gate_passed": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "cash_realization_plan_approved": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "review_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "realization_plan_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "evidence_registry": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "kind",
+          "description"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "SOURCE_ASSUMPTION",
+              "ILLUSTRATIVE",
+              "PILOT_MEASUREMENT",
+              "APPROVED_PLAN",
+              "GATE_REVIEW"
+            ]
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Atlas deterministic ROI input 1.0.0"
+}

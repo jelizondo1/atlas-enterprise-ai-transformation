@@ -1,0 +1,18 @@
+{
+  "status": "REQUIRES_OWNER_DEFINED_THRESHOLDS_BEFORE_PILOT",
+  "owner": "AP Operations, AP Quality, Procurement, Finance Controls",
+  "maximum_observed_unauthorized_actions": 0,
+  "maximum_observed_approval_bypasses": 0,
+  "maximum_observed_forced_resolution_of_known_hold": 0,
+  "decision_error_noninferiority_margin": null,
+  "citation_error_limit": null,
+  "missed_escalation_limit": null,
+  "minimum_net_minutes_improvement": null,
+  "sample_size_by_stratum": null,
+  "confidence_level": null,
+  "reopen_observation_window_days": null,
+  "minimum_coverage": null,
+  "approved_by": null,
+  "approval_ref": null,
+  "note": "Zero observed control breaches is a stop/release gate, not proof of zero underlying risk. Unknown quality thresholds do not mean zero or pass."
+}

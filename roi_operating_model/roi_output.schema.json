@@ -1,0 +1,224 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "scenario_id",
+    "mode",
+    "input_sha256",
+    "status",
+    "missing_parameters",
+    "blocked_reasons",
+    "steady_state",
+    "year_one",
+    "break_even",
+    "claim_boundary",
+    "rounding"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "scenario_id": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string"
+    },
+    "input_sha256": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "NOT_ESTIMABLE",
+        "BLOCKED",
+        "ILLUSTRATIVE_ONLY",
+        "CONDITIONAL_SCENARIO"
+      ]
+    },
+    "missing_parameters": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blocked_reasons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "steady_state": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "adopted_annual_cases",
+        "gross_released_hours",
+        "net_capacity_hours",
+        "net_capacity_fte_equivalent",
+        "net_capacity_value_usd",
+        "realizable_labor_cash_benefit_usd",
+        "remaining_noncash_capacity_value_usd",
+        "incremental_cash_cost_usd",
+        "net_cash_benefit_usd",
+        "cash_roi_fraction",
+        "capacity_minus_incremental_cash_cost_usd",
+        "warning"
+      ],
+      "properties": {
+        "adopted_annual_cases": {
+          "type": "string"
+        },
+        "gross_released_hours": {
+          "type": "string"
+        },
+        "net_capacity_hours": {
+          "type": "string"
+        },
+        "net_capacity_fte_equivalent": {
+          "type": "string"
+        },
+        "net_capacity_value_usd": {
+          "type": "string"
+        },
+        "realizable_labor_cash_benefit_usd": {
+          "type": "string"
+        },
+        "remaining_noncash_capacity_value_usd": {
+          "type": "string"
+        },
+        "incremental_cash_cost_usd": {
+          "type": "string"
+        },
+        "net_cash_benefit_usd": {
+          "type": "string"
+        },
+        "cash_roi_fraction": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "capacity_minus_incremental_cash_cost_usd": {
+          "type": "string"
+        },
+        "warning": {
+          "type": "string"
+        }
+      }
+    },
+    "year_one": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "adopted_annual_cases",
+        "gross_released_hours",
+        "net_capacity_hours",
+        "net_capacity_fte_equivalent",
+        "net_capacity_value_usd",
+        "realizable_labor_cash_benefit_usd",
+        "remaining_noncash_capacity_value_usd",
+        "incremental_cash_cost_usd",
+        "net_cash_benefit_usd",
+        "cash_roi_fraction",
+        "capacity_minus_incremental_cash_cost_usd",
+        "warning"
+      ],
+      "properties": {
+        "adopted_annual_cases": {
+          "type": "string"
+        },
+        "gross_released_hours": {
+          "type": "string"
+        },
+        "net_capacity_hours": {
+          "type": "string"
+        },
+        "net_capacity_fte_equivalent": {
+          "type": "string"
+        },
+        "net_capacity_value_usd": {
+          "type": "string"
+        },
+        "realizable_labor_cash_benefit_usd": {
+          "type": "string"
+        },
+        "remaining_noncash_capacity_value_usd": {
+          "type": "string"
+        },
+        "incremental_cash_cost_usd": {
+          "type": "string"
+        },
+        "net_cash_benefit_usd": {
+          "type": "string"
+        },
+        "cash_roi_fraction": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "capacity_minus_incremental_cash_cost_usd": {
+          "type": "string"
+        },
+        "warning": {
+          "type": "string"
+        }
+      }
+    },
+    "break_even": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "steady_state_cash_break_even_minutes_per_adopted_case",
+        "steady_run_rate_payback_proxy_months",
+        "actual_ramp_adjusted_payback_months",
+        "note"
+      ],
+      "properties": {
+        "steady_state_cash_break_even_minutes_per_adopted_case": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "steady_run_rate_payback_proxy_months": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "actual_ramp_adjusted_payback_months": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "claim_boundary": {
+      "type": "string"
+    },
+    "rounding": {
+      "type": "string"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Atlas regular ROI result (CLI invalid-input errors use a separate error envelope)"
+}

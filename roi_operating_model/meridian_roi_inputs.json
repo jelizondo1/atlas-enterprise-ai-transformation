@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0.0",
+  "scenario_id": "meridian_O01_O02_O05_unmeasured",
+  "mode": "UNSIZED",
+  "bundle_opportunity_ids": [
+    "O01",
+    "O02",
+    "O05"
+  ],
+  "baseline": {
+    "annual_disputes": "180000",
+    "annual_handling_hours": "71952",
+    "productive_hours_per_fte": "1700",
+    "capacity_rate_usd_per_hour": "50"
+  },
+  "parameters": {
+    "unique_eligible_annual_cases": {
+      "value": null,
+      "unit": "cases/year",
+      "status": "UNKNOWN",
+      "source_ref": null,
+      "owner": "AP Operations / Analytics"
+    },
+    "baseline_bundle_minutes": {
+      "value": null,
+      "unit": "active minutes/eligible case",
+      "status": "UNKNOWN",
+      "source_ref": null,
+      "owner": "AP Operations / Analytics"
+    },
+    "intervention_bundle_minutes_including_review": {
+      "value": null,
+      "unit": "active minutes/eligible case",
+      "status": "UNKNOWN",
+      "source_ref": null,
+      "owner": "AP Operations / Analytics"
+    },
+    "steady_adoption_fraction": {
+      "value": null,
+      "unit": "fraction",
+      "status": "UNKNOWN",
+      "source_ref": null,
+      "owner": "AP Operations"
+    },
+    "year1_adoption_fraction": {
+      "value": null,
+      "unit": "fraction, annual average including ramp",
+      "status": "UNKNOWN",
+      "source_ref": null,
+      "owner": "AP Operations"
+    },
+    "annual_internal_maintenance_hours": {
+      "value": null,
+      "unit": "hours/year",
+      "status": "UNKNOWN",
+      "source_ref": null,
+      "owner": "IT / AP Operations"
+    },
+    "implementation_cash_cost_usd": {
+      "value": null,
+      "unit": "USD, one time",
+      "status": "UNKNOWN",
+      "source_ref": null,
+      "owner": "Finance / IT"
+    },
+    "annual_incremental_run_cash_cost_usd": {
+      "value": null,
+      "unit": "USD/year",
+      "status": "UNKNOWN",
+      "source_ref": null,
+      "owner": "Finance / IT"
+    },
+    "cash_realization_fraction": {
+      "value": null,
+      "unit": "fraction of positive net capacity value",
+      "status": "UNKNOWN",
+      "source_ref": null,
+      "owner": "Finance"
+    }
+  },
+  "governance": {
+    "unique_cohort_verified": null,
+    "bundle_time_nonoverlap_verified": null,
+    "quality_gate_passed": null,
+    "control_gate_passed": null,
+    "cash_realization_plan_approved": null,
+    "review_ref": null,
+    "realization_plan_ref": null
+  },
+  "evidence_registry": [
+    {
+      "id": "DAY3_BASELINE",
+      "kind": "SOURCE_ASSUMPTION",
+      "description": "opportunity_mapping/meridian_opportunity_map_final.json /baseline; 180000 annual disputes, 71952 hours, 1700 hours/FTE, USD 50/hour planning rate."
+    }
+  ]
+}

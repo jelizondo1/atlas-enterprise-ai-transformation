@@ -1,0 +1,304 @@
+{
+  "schema_version": "1.0.0",
+  "status": "PROPOSED_DESIGN_NOT_PRODUCTION_APPROVED",
+  "source_map": "opportunity_mapping/meridian_opportunity_map_final.json",
+  "design_evidence_type": "INFERRED",
+  "pilot_bundle": [
+    "O01",
+    "O02",
+    "O05"
+  ],
+  "control_prerequisites": [
+    "O03",
+    "O04",
+    "O08",
+    "O09"
+  ],
+  "supporting_capabilities": [
+    "O06",
+    "O07"
+  ],
+  "financial_execution_enabled": false,
+  "supplier_sending_enabled": false,
+  "start_state": "S0",
+  "states": [
+    {
+      "id": "S0",
+      "name": "Register and validate intake",
+      "opportunity_refs": [
+        "O02",
+        "O09"
+      ],
+      "executors": "WORKFLOW_AUTOMATION + DETERMINISTIC_LOGIC",
+      "accountable_owner": "AP Operations",
+      "inputs": "Immutable case ID, original dispute amount, supplier/entity/currency, created date and policy version",
+      "activity": "Verify identity, authorized source access, intake completeness and applicable policy date",
+      "outputs": "Versioned case record",
+      "stop_or_exception": "Missing identity or governing version \u00e2\u2020\u2019 HOLD; risk \u00e2\u2020\u2019 specialist",
+      "default_next": "S1"
+    },
+    {
+      "id": "S1",
+      "name": "Assemble evidence packet",
+      "opportunity_refs": [
+        "O01"
+      ],
+      "executors": "WORKFLOW_AUTOMATION + LLM + HUMAN_JUDGMENT",
+      "accountable_owner": "AP Analyst",
+      "inputs": "Authorized SAP/Coupa/SharePoint/Outlook/TMS records and case scope",
+      "activity": "Connectors retrieve exact records; optional LLM cites relevant passages and drafts summary; analyst checks sufficiency",
+      "outputs": "Source IDs, versions, citations and explicit gaps",
+      "stop_or_exception": "No fabricated evidence or final applicability decision",
+      "default_next": "S2"
+    },
+    {
+      "id": "S2",
+      "name": "Assess evidence requirements",
+      "opportunity_refs": [
+        "O02"
+      ],
+      "executors": "DETERMINISTIC_LOGIC + HUMAN_JUDGMENT",
+      "accountable_owner": "AP Analyst / Receiving",
+      "inputs": "Case-type checklist and evidence packet",
+      "activity": "Rules test presence using approved supplier/service exceptions; human tests adequacy",
+      "outputs": "Complete evidence or named information request",
+      "stop_or_exception": "Missing evidence \u00e2\u2020\u2019 W1; conflicts or ambiguity \u00e2\u2020\u2019 H1",
+      "default_next": "S3"
+    },
+    {
+      "id": "W1",
+      "name": "Pending information",
+      "opportunity_refs": [
+        "O02"
+      ],
+      "executors": "WORKFLOW_AUTOMATION + HUMAN_JUDGMENT",
+      "accountable_owner": "AP Analyst / evidence owner",
+      "inputs": "Missing item, assigned owner, request and due date",
+      "activity": "Draft specific request; approved workflow follows up; retain elapsed pending time in SLA",
+      "outputs": "New evidence with timestamp and provenance",
+      "stop_or_exception": "No automatic rejection for missing item; no silent SLA clock reset",
+      "default_next": "S1"
+    },
+    {
+      "id": "S3",
+      "name": "Establish applicable terms",
+      "opportunity_refs": [
+        "O03",
+        "O04",
+        "O08"
+      ],
+      "executors": "LLM + DETERMINISTIC_LOGIC + HUMAN_JUDGMENT",
+      "accountable_owner": "AP Analyst; Procurement / Legal for conflict",
+      "inputs": "Executed documents, verified scope/dates, supplier rules",
+      "activity": "LLM proposes cited interpretation; AP applies clear terms; specialist resolves authority gaps",
+      "outputs": "Validated governing rule version or hold",
+      "stop_or_exception": "Solara C1, conflicting terms, uncertain dates or historical-only support \u00e2\u2020\u2019 H1",
+      "default_next": "S4"
+    },
+    {
+      "id": "H1",
+      "name": "Specialist authority hold",
+      "opportunity_refs": [
+        "O07",
+        "O08",
+        "O09"
+      ],
+      "executors": "WORKFLOW_AUTOMATION + HUMAN_JUDGMENT",
+      "accountable_owner": "Procurement / Legal / Tax / Finance Controls as applicable",
+      "inputs": "Evidence brief, specific question, original amount, risk triggers",
+      "activity": "Rules route known triggers; human can always escalate; authorized specialist records scoped decision",
+      "outputs": "Authoritative evidence/decision record; unresolved stays on hold",
+      "stop_or_exception": "No model confidence override; $50000 \u00e2\u2020\u2019 Finance Controls; Solara \u00e2\u2020\u2019 Procurement / Legal",
+      "default_next": "S1"
+    },
+    {
+      "id": "S4",
+      "name": "Reconcile components and calculate",
+      "opportunity_refs": [
+        "O06",
+        "O09"
+      ],
+      "executors": "DETERMINISTIC_LOGIC + HUMAN_JUDGMENT",
+      "accountable_owner": "AP Analyst / Finance Controls",
+      "inputs": "Validated governing terms, original scope, currency and component evidence",
+      "activity": "Human verifies material extraction and scope; deterministic Decimal calculation reconciles supported and unsupported amounts",
+      "outputs": "Reproducible calculation record plus proposed disposition",
+      "stop_or_exception": "Apex MRG-2026-0139 unreconciled scope \u00e2\u2020\u2019 H1; no authority splitting",
+      "default_next": "S5"
+    },
+    {
+      "id": "S5",
+      "name": "Prepare closure and decision packet",
+      "opportunity_refs": [
+        "O05",
+        "O04"
+      ],
+      "executors": "LLM + DETERMINISTIC_LOGIC + HUMAN_JUDGMENT",
+      "accountable_owner": "AP Analyst",
+      "inputs": "Proposed disposition, verified calculation, terms, evidence and required consultation",
+      "activity": "LLM drafts cited notes/communication; rules check required references; human verifies substance",
+      "outputs": "Reviewed draft packet with unresolved items visible",
+      "stop_or_exception": "Completeness is not correctness; no external send or financial action",
+      "default_next": "S6"
+    },
+    {
+      "id": "S6",
+      "name": "Obtain authorized decision",
+      "opportunity_refs": [
+        "O09",
+        "O07"
+      ],
+      "executors": "DETERMINISTIC_LOGIC + WORKFLOW_AUTOMATION + HUMAN_JUDGMENT",
+      "accountable_owner": "Authorized AP role; required specialist consulted",
+      "inputs": "Current case version, original disputed amount, authenticated delegation and consultation records",
+      "activity": "Rule engine identifies required role; authenticated authorized human approves or rejects; any hold prevents progression",
+      "outputs": "Version-bound human decision and approval record",
+      "stop_or_exception": "At $50000 hold; specialist requirements survive low value; rejection/revision returns to S1",
+      "default_next": "S7"
+    },
+    {
+      "id": "S7",
+      "name": "Execute approved disposition and communicate",
+      "opportunity_refs": [
+        "O05"
+      ],
+      "executors": "WORKFLOW_AUTOMATION + DETERMINISTIC_LOGIC",
+      "accountable_owner": "AP Operations / system owner",
+      "inputs": "Current verified approval, unchanged case hash, accepted communication and action plan",
+      "activity": "TARGET ONLY: revalidate authority/state; idempotent posting; reconcile result; reviewed supplier communication; closure",
+      "outputs": "System receipt, communication receipt and closed case audit trail",
+      "stop_or_exception": "Pilot produces a simulated packet only. Stale approval or failed/unknown posting \u00e2\u2020\u2019 hold/reconcile; no blind retry",
+      "default_next": "S8"
+    },
+    {
+      "id": "S8",
+      "name": "Quality review and reopening",
+      "opportunity_refs": [
+        "O05"
+      ],
+      "executors": "HUMAN_JUDGMENT + DETERMINISTIC_LOGIC",
+      "accountable_owner": "AP Quality",
+      "inputs": "Closed record, independent QA sample and new evidence",
+      "activity": "Human reviews correctness; deterministic measurement tracks errors/reopens/review time",
+      "outputs": "QA finding, learning record or versioned reopened case",
+      "stop_or_exception": "New evidence/changed disposition invalidates prior approval for new execution; do not train on historic outcome as truth",
+      "default_next": "S1"
+    }
+  ],
+  "terminal_state": "CLOSED_UNDER_QA",
+  "edges": [
+    {
+      "from": "S0",
+      "to": "S1",
+      "condition": "Identity, permitted access and governing version verified"
+    },
+    {
+      "from": "S1",
+      "to": "S2",
+      "condition": "Cited evidence packet assembled with explicit gaps"
+    },
+    {
+      "from": "S2",
+      "to": "S3",
+      "condition": "Required evidence present and human-verified sufficient, with no unresolved conflict"
+    },
+    {
+      "from": "W1",
+      "to": "S1",
+      "condition": "New requested evidence received; preserve elapsed waiting time"
+    },
+    {
+      "from": "S3",
+      "to": "S4",
+      "condition": "Applicable terms verified and clear; no authority conflict"
+    },
+    {
+      "from": "H1",
+      "to": "S1",
+      "condition": "Authorized specialist supplied recorded evidence/decision resolving the hold"
+    },
+    {
+      "from": "S4",
+      "to": "S5",
+      "condition": "Original scope and currency reconciled; deterministic calculation verified"
+    },
+    {
+      "from": "S5",
+      "to": "S6",
+      "condition": "Human-reviewed draft packet complete; no unresolved substantive issue"
+    },
+    {
+      "from": "S6",
+      "to": "S7",
+      "condition": "Authenticated authorized human approved the current case version and all required consultations; no holds"
+    },
+    {
+      "from": "S7",
+      "to": "S8",
+      "condition": "Actual receipts reconciled in future production, or simulated packet recorded in read-only pilot"
+    },
+    {
+      "from": "S8",
+      "to": "S1",
+      "condition": "New evidence or QA finding warrants reopening; supersede prior approval for new execution"
+    },
+    {
+      "from": "S2",
+      "to": "W1",
+      "condition": "required evidence missing"
+    },
+    {
+      "from": "S2",
+      "to": "H1",
+      "condition": "evidence conflict or material ambiguity"
+    },
+    {
+      "from": "S3",
+      "to": "H1",
+      "condition": "terms or authority unresolved"
+    },
+    {
+      "from": "S4",
+      "to": "H1",
+      "condition": "scope/currency/calculation input unresolved"
+    },
+    {
+      "from": "S6",
+      "to": "H1",
+      "condition": "threshold or specialist hold"
+    },
+    {
+      "from": "S6",
+      "to": "S1",
+      "condition": "human rejects or requests revision"
+    },
+    {
+      "from": "S7",
+      "to": "H1",
+      "condition": "stale approval or execution result unknown"
+    },
+    {
+      "from": "S8",
+      "to": "CLOSED_UNDER_QA",
+      "condition": "no reopening trigger; retain QA/audit record"
+    }
+  ],
+  "audit_fields": [
+    "case_id",
+    "case_version",
+    "source_ids_and_versions",
+    "governing_policy_id_and_effective_date",
+    "original_disputed_amount_and_currency",
+    "component_scope_id",
+    "calculation_inputs_outputs_and_version",
+    "model_draft_id_and_citations",
+    "human_corrections",
+    "specialist_decision_id",
+    "approval_actor_role_delegation_timestamp_and_case_hash",
+    "idempotency_key",
+    "posting_and_communication_receipts",
+    "hold_reason_owner_and_time",
+    "reopen_reason_and_superseded_approval"
+  ],
+  "pilot_boundary": "S0-S6 are shadow/review support; current authorized process remains responsible for actual operations. S7 is simulated only. No live connectors or authority-granting service implemented."
+}

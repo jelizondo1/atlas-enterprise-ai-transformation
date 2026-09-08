@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "scenario_id": "meridian_O01_O02_O05_unmeasured",
+  "mode": "UNSIZED",
+  "input_sha256": "a5b380308f6eaca9eee65ba8da0fdcfc018062b93fdc2d1c55c588b814ab6315",
+  "status": "NOT_ESTIMABLE",
+  "missing_parameters": [
+    "unique_eligible_annual_cases",
+    "baseline_bundle_minutes",
+    "intervention_bundle_minutes_including_review",
+    "steady_adoption_fraction",
+    "year1_adoption_fraction",
+    "annual_internal_maintenance_hours",
+    "implementation_cash_cost_usd",
+    "annual_incremental_run_cash_cost_usd",
+    "cash_realization_fraction"
+  ],
+  "blocked_reasons": [],
+  "steady_state": null,
+  "year_one": null,
+  "break_even": null,
+  "claim_boundary": "Scenario calculation only. Capacity value is not cash savings; no deployment or payment authority.",
+  "rounding": "Decimal arithmetic; six decimal places serialized, rounding only at output."
+}
