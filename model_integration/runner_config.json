@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "provider": "openai_responses",
+  "model": null,
+  "max_output_tokens": 4096,
+  "timeout_seconds": 60,
+  "max_cases_per_run": 3,
+  "max_input_characters": 100000,
+  "automatic_retries": 0,
+  "store": false,
+  "tools": [],
+  "financial_execution_allowed": false
+}

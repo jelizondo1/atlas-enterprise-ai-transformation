@@ -1,0 +1,93 @@
+{
+  "type": "object",
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "case_version_sha256": {
+      "type": "string"
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "FACT",
+              "UNCERTAINTY",
+              "REVIEW_QUESTION"
+            ]
+          },
+          "text": {
+            "type": "string"
+          },
+          "citations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "source_id": {
+                  "type": "string"
+                },
+                "source_sha256": {
+                  "type": "string"
+                },
+                "line_start": {
+                  "type": "integer"
+                },
+                "line_end": {
+                  "type": "integer"
+                },
+                "quote": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "source_id",
+                "source_sha256",
+                "line_start",
+                "line_end",
+                "quote"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "kind",
+          "text",
+          "citations"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "recommended_next_step": {
+      "type": "string",
+      "enum": [
+        "HUMAN_EVIDENCE_REVIEW",
+        "REQUEST_INFORMATION",
+        "SPECIALIST_REVIEW"
+      ]
+    },
+    "suggested_review_owner": {
+      "type": "string"
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "case_id",
+    "case_version_sha256",
+    "claims",
+    "recommended_next_step",
+    "suggested_review_owner",
+    "uncertainties"
+  ],
+  "additionalProperties": false
+}
