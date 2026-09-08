@@ -1,0 +1,76 @@
+{
+  "files": [
+    {
+      "file": "source_pack/01_AP_Dispute_Resolution_SOP.md",
+      "sha256": "82b014643273cdc9f76aacc3440164d73e8e4ff09f0c06e2dbf393cbf2b01b94"
+    },
+    {
+      "file": "source_pack/02_Vendor_Commercial_Terms_Policy.md",
+      "sha256": "b9f2e4d0f5414c5b3b18a1a9da35bc739bbfa590942440c4e59bd2f6f0b39657"
+    },
+    {
+      "file": "source_pack/03_NorthStar_Agreements.md",
+      "sha256": "b708e85ba0a40c52912ededf5b67f0c98c00d8a26b7073c536ddd9c0639905ac"
+    },
+    {
+      "file": "source_pack/04_Apex_Agreement.md",
+      "sha256": "516218f922534f3dfda2dff1a2e4db07e8510c8798851707a2a186506c2d6405"
+    },
+    {
+      "file": "source_pack/05_Solara_Agreements_and_Email.md",
+      "sha256": "12dc1d45cd2f6f0a025a40ee6e2cf396b101142ebc633a97ac9de879637cb960"
+    },
+    {
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0003.md",
+      "sha256": "f63667e5a210e76d329636953772ff45feae1cb6c706e0ac7d9dc884ad89ede1"
+    },
+    {
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0018.md",
+      "sha256": "e7b7567b1ae79e863def0f50a1503289d10e357c1fd0fb752d8fde3d135e8179"
+    },
+    {
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0022.md",
+      "sha256": "0651ca16804e416e99821bda54312ef612edad7268b6477272de42534b9b82b0"
+    },
+    {
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0026.md",
+      "sha256": "44c5dceae2bb7e17191712a7c7134755941e370feb5eff853f488ca0b71131c0"
+    },
+    {
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0139.md",
+      "sha256": "bca0499c5913118e536742ac7971426fc3b22917655eb9388a2ea1a7b36feec0"
+    },
+    {
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0143.md",
+      "sha256": "3d59780742af1c4aa57145399be9bf94ac0122c3fd529d639107225b4deedb40"
+    },
+    {
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0147.md",
+      "sha256": "fa83a06885a881097f5f80d9db244665ed12077e0a9712c88e068901f54b917e"
+    },
+    {
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0159.md",
+      "sha256": "bd8cb8cdc13e4244bf64644b6d4949faaa1b3f9326bce5655cd11c73f0f508f7"
+    },
+    {
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0168.md",
+      "sha256": "c52df47c3e55482181d222620b0aca1ab302c61929b45629370f46597ede368d"
+    },
+    {
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0184.md",
+      "sha256": "8c2e59413bd3b966e9e2e0261ad87d7a4f954de97303ac8788e38703a8c40a3c"
+    },
+    {
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0213.md",
+      "sha256": "96a0e446cf2e5c08b8941cf9e24713d54fc49f1ce93ae142cb0b993242e17180"
+    },
+    {
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0215.md",
+      "sha256": "003b1142480c7709de3a783cc3743c344d13e3fe8b89d15f7e0a3e751b5eacc4"
+    },
+    {
+      "file": "source_pack/meridian_disputes_250.csv",
+      "sha256": "90ab2a5b3146990dbc81079604106a4f3a77baf27185f92b3b6a367f099b8929"
+    }
+  ]
+}
