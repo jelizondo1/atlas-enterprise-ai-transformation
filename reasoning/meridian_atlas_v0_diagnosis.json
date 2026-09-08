@@ -1,0 +1,562 @@
+{
+  "case_name": "Meridian Retail Group \u2014 Supplier Invoice Dispute Transformation",
+  "executive_summary": [
+    {
+      "statement": "Meridian's dispute process is a multi-system exception workflow in which AP analysts must reconstruct facts from SAP, Coupa, Outlook, SharePoint, receiving/logistics records, and supplier-specific commercial terms before determining a disposition.",
+      "evidence_type": "DIRECT",
+      "confidence": 0.99,
+      "evidence_refs": [
+        "DOC:01_AP_Dispute_Resolution_SOP.md",
+        "DOC:02_Vendor_Commercial_Terms_Policy.md"
+      ]
+    },
+    {
+      "statement": "Historical performance is weak relative to stated service levels: the analyzed dataset shows 62% SLA attainment, 6.8 business days average resolution time, and a 14% reopen rate.",
+      "evidence_type": "DERIVED",
+      "confidence": 1.0,
+      "evidence_refs": [
+        "QUANT:overall"
+      ]
+    },
+    {
+      "statement": "Missing evidence is strongly associated with poorer operating outcomes: cases marked as missing evidence achieved 13.3% SLA attainment versus 68.6% without missing evidence.",
+      "evidence_type": "DERIVED",
+      "confidence": 1.0,
+      "evidence_refs": [
+        "QUANT:missing_evidence_impact"
+      ]
+    },
+    {
+      "statement": "Supplier-specific terms materially change otherwise standard AP decisions, creating a recurring need to identify the correct governing document before resolving price, freight, dispute-window, quantity, and service cases.",
+      "evidence_type": "DIRECT",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "DOC:03_NorthStar_Agreements.md",
+        "DOC:04_Apex_Agreement.md",
+        "DOC:05_Solara_Agreements_and_Email.md"
+      ]
+    },
+    {
+      "statement": "A material part of operational complexity appears to arise from evidence retrieval, interpretation, and handoffs rather than from the arithmetic of invoice matching alone.",
+      "evidence_type": "INFERRED",
+      "confidence": 0.87,
+      "evidence_refs": [
+        "DOC:01_AP_Dispute_Resolution_SOP.md",
+        "QUANT:system_complexity_bands",
+        "QUANT:missing_evidence_impact"
+      ]
+    }
+  ],
+  "process_steps": [
+    {
+      "step_id": "P1",
+      "process_step": "Invoice validation and exception creation",
+      "actor": [
+        "SAP / AP automation"
+      ],
+      "trigger": "Invoice enters Meridian AP processing and fails standard automated validation.",
+      "inputs": [
+        "Supplier invoice",
+        "Purchase order",
+        "Goods receipt where applicable"
+      ],
+      "systems_used": [
+        "SAP S/4HANA"
+      ],
+      "activity": "Create an invoice exception and assign a reason code when sufficient information is available.",
+      "decision_required": "Whether the invoice can process automatically or requires exception handling.",
+      "outputs": [
+        "Invoice exception",
+        "System reason code"
+      ],
+      "handoffs": [
+        "AP Analyst"
+      ],
+      "policy_constraints": [
+        "Reason code must be validated by the assigned analyst."
+      ],
+      "approval_required": "None at intake.",
+      "failure_modes": [
+        "Incorrect reason-code assignment",
+        "Overuse of OTHER",
+        "Incomplete intake context"
+      ],
+      "evidence_refs": [
+        "DOC:01_AP_Dispute_Resolution_SOP.md"
+      ]
+    },
+    {
+      "step_id": "P2",
+      "process_step": "Reason-code verification and evidence collection",
+      "actor": [
+        "AP Analyst"
+      ],
+      "trigger": "Exception assigned to analyst.",
+      "inputs": [
+        "Invoice exception",
+        "Invoice",
+        "PO",
+        "Goods receipt",
+        "Supplier documentation",
+        "Commercial agreements"
+      ],
+      "systems_used": [
+        "SAP",
+        "Coupa",
+        "SharePoint",
+        "Outlook",
+        "TMS",
+        "Receiving records as applicable"
+      ],
+      "activity": "Verify the actual issue and assemble the factual and commercial evidence needed to resolve it.",
+      "decision_required": "Whether available evidence is sufficient and which additional sources or stakeholders are required.",
+      "outputs": [
+        "Evidence set",
+        "Confirmed or revised issue framing"
+      ],
+      "handoffs": [
+        "Supplier",
+        "Procurement",
+        "Receiving",
+        "Logistics",
+        "Tax"
+      ],
+      "policy_constraints": [
+        "Analyst should avoid requesting evidence already available internally.",
+        "Supplier-specific executed terms can override generic policy."
+      ],
+      "approval_required": "None solely for evidence collection.",
+      "failure_modes": [
+        "Missing evidence",
+        "Searching multiple repositories",
+        "Outdated or conflicting documents",
+        "Weak historical notes"
+      ],
+      "evidence_refs": [
+        "DOC:01_AP_Dispute_Resolution_SOP.md",
+        "DOC:02_Vendor_Commercial_Terms_Policy.md"
+      ]
+    },
+    {
+      "step_id": "P3",
+      "process_step": "Root-cause and policy determination",
+      "actor": [
+        "AP Analyst"
+      ],
+      "trigger": "Relevant evidence has been assembled.",
+      "inputs": [
+        "Transaction records",
+        "Supplier evidence",
+        "Generic AP policy",
+        "Supplier-specific contracts/amendments"
+      ],
+      "systems_used": [
+        "SAP",
+        "SharePoint",
+        "Outlook",
+        "TMS as applicable"
+      ],
+      "activity": "Determine the cause of the discrepancy and identify the commercial or procedural rule that governs the case.",
+      "decision_required": "Which policy or supplier-specific term governs and whether the case is sufficiently clear to resolve.",
+      "outputs": [
+        "Root-cause determination",
+        "Applicable policy/contract interpretation"
+      ],
+      "handoffs": [
+        "Procurement",
+        "Tax",
+        "Logistics",
+        "Receiving"
+      ],
+      "policy_constraints": [
+        "Document precedence applies.",
+        "Informal email and historical treatment are not automatically authoritative."
+      ],
+      "approval_required": "Specialist review where policy requires it.",
+      "failure_modes": [
+        "Ambiguous contract language",
+        "Conflicting amendments",
+        "Reliance on precedent without validating current terms",
+        "Incorrect interpretation"
+      ],
+      "evidence_refs": [
+        "DOC:02_Vendor_Commercial_Terms_Policy.md",
+        "DOC:03_NorthStar_Agreements.md",
+        "DOC:04_Apex_Agreement.md",
+        "DOC:05_Solara_Agreements_and_Email.md"
+      ]
+    },
+    {
+      "step_id": "P4",
+      "process_step": "Request additional information or escalate",
+      "actor": [
+        "AP Analyst",
+        "Procurement",
+        "Receiving",
+        "Logistics",
+        "Tax",
+        "Supplier"
+      ],
+      "trigger": "Evidence is incomplete, authority is insufficient, or interpretation is ambiguous.",
+      "inputs": [
+        "Current case summary",
+        "Known evidence",
+        "Specific unresolved question"
+      ],
+      "systems_used": [
+        "Outlook",
+        "Coupa",
+        "SharePoint",
+        "SAP"
+      ],
+      "activity": "Request missing information or route the case to the function with authority to resolve the ambiguity.",
+      "decision_required": "Who owns the unresolved question and whether the case should remain pending or be escalated.",
+      "outputs": [
+        "Additional evidence",
+        "Functional decision",
+        "Escalation response"
+      ],
+      "handoffs": [
+        "AP Analyst"
+      ],
+      "policy_constraints": [
+        "Cases awaiting evidence remain PENDING INFORMATION.",
+        "Escalation should state the evidence and specific decision required."
+      ],
+      "approval_required": "Depends on subject matter and disputed amount.",
+      "failure_modes": [
+        "Slow follow-up",
+        "Poorly structured escalation",
+        "Escalation because a case is time-consuming rather than truly ambiguous",
+        "External waiting time"
+      ],
+      "evidence_refs": [
+        "DOC:01_AP_Dispute_Resolution_SOP.md",
+        "CASE:MRG-2026-0026",
+        "CASE:MRG-2026-0184",
+        "CASE:MRG-2026-0147"
+      ]
+    },
+    {
+      "step_id": "P5",
+      "process_step": "Resolution and approval",
+      "actor": [
+        "AP Analyst",
+        "AP Team Lead",
+        "AP Manager",
+        "Finance Director",
+        "Procurement where required"
+      ],
+      "trigger": "Evidence and governing rule are sufficient to make a disposition.",
+      "inputs": [
+        "Resolution recommendation",
+        "Disputed amount",
+        "Supporting evidence",
+        "Required specialist input"
+      ],
+      "systems_used": [
+        "SAP",
+        "Email / Coupa for approval evidence"
+      ],
+      "activity": "Select the resolution disposition and obtain required approval according to disputed amount and policy.",
+      "decision_required": "PAY_AS_INVOICED, PAY_PO_AMOUNT, PARTIAL_ADJUSTMENT, REQUEST_CREDIT_NOTE, REJECT_DISPUTE, or ESCALATE.",
+      "outputs": [
+        "Approved disposition"
+      ],
+      "handoffs": [
+        "AP Analyst for execution"
+      ],
+      "policy_constraints": [
+        "Approval authority is based on original disputed amount.",
+        "Certain strategic-supplier situations require Procurement consultation."
+      ],
+      "approval_required": "< $10k analyst; $10k\u2013$50k team lead; $50k\u2013$250k AP manager; > $250k Finance Director.",
+      "failure_modes": [
+        "Incorrect disposition",
+        "Missing approval",
+        "Failure to decompose mixed invoices",
+        "Unsupported exception"
+      ],
+      "evidence_refs": [
+        "DOC:01_AP_Dispute_Resolution_SOP.md",
+        "DOC:02_Vendor_Commercial_Terms_Policy.md",
+        "DOC:03_NorthStar_Agreements.md",
+        "DOC:04_Apex_Agreement.md"
+      ]
+    },
+    {
+      "step_id": "P6",
+      "process_step": "System update, supplier communication, and closure",
+      "actor": [
+        "AP Analyst"
+      ],
+      "trigger": "Resolution is approved.",
+      "inputs": [
+        "Approved disposition",
+        "Supporting evidence",
+        "Approval record"
+      ],
+      "systems_used": [
+        "SAP",
+        "Outlook",
+        "Coupa"
+      ],
+      "activity": "Update the system of record, enter case notes, communicate the outcome to the supplier when required, and close the dispute.",
+      "decision_required": "What information must be recorded and communicated externally.",
+      "outputs": [
+        "Updated SAP record",
+        "Supplier communication",
+        "Closed case"
+      ],
+      "handoffs": [
+        "Supplier",
+        "Quality review"
+      ],
+      "policy_constraints": [
+        "Case notes must be sufficient for another qualified employee to understand the decision.",
+        "Supplier communication must not disclose inappropriate internal information."
+      ],
+      "approval_required": "Resolution approval must already be complete.",
+      "failure_modes": [
+        "Weak case notes",
+        "Manual transcription errors",
+        "Inconsistent supplier messaging"
+      ],
+      "evidence_refs": [
+        "DOC:01_AP_Dispute_Resolution_SOP.md"
+      ]
+    },
+    {
+      "step_id": "P7",
+      "process_step": "Quality review and possible reopening",
+      "actor": [
+        "AP Team Lead",
+        "AP Analyst"
+      ],
+      "trigger": "Periodic quality review, new supplier evidence, internal challenge, or discovered processing error.",
+      "inputs": [
+        "Closed case",
+        "Case notes",
+        "New evidence if applicable"
+      ],
+      "systems_used": [
+        "SAP",
+        "Underlying evidence repositories"
+      ],
+      "activity": "Assess decision accuracy, documentation, approvals, and communications; reopen if warranted.",
+      "decision_required": "Whether the closed resolution remains supportable.",
+      "outputs": [
+        "Quality result",
+        "Reopened case where required"
+      ],
+      "handoffs": [
+        "AP Analyst",
+        "Management coaching where needed"
+      ],
+      "policy_constraints": [
+        "Reason for reopening must be documented."
+      ],
+      "approval_required": "Depends on revised disposition.",
+      "failure_modes": [
+        "Rework",
+        "Repeated errors",
+        "Inability to reconstruct prior decision from weak notes"
+      ],
+      "evidence_refs": [
+        "DOC:01_AP_Dispute_Resolution_SOP.md",
+        "QUANT:reopened_case_profile"
+      ]
+    }
+  ],
+  "quantitative_baseline": {
+    "cases_analyzed": 250,
+    "avg_handling_minutes": 24.0,
+    "avg_resolution_days": 6.8,
+    "sla_attainment": 0.62,
+    "reopen_rate": 0.14,
+    "missing_evidence_rate": 0.12,
+    "avg_systems_accessed": 3.34
+  },
+  "diagnostic_findings": [
+    {
+      "finding_id": "F1",
+      "finding": "Evidence fragmentation is a central operating constraint: analysts are expected to assemble case facts from multiple systems and repositories before deciding a dispute.",
+      "category": "INFORMATION",
+      "evidence_type": "DIRECT",
+      "confidence": 0.99,
+      "support": [
+        "SOP names SAP, Coupa, Outlook, SharePoint, and TMS as required sources depending on case type.",
+        "Supplier-specific agreements and selected case packets show that a single decision can depend on multiple documents and operational records."
+      ],
+      "operational_impact": "Creates search effort, context switching, and dependence on complete/correct evidence before resolution can proceed.",
+      "evidence_refs": [
+        "DOC:01_AP_Dispute_Resolution_SOP.md",
+        "DOC:03_NorthStar_Agreements.md",
+        "DOC:04_Apex_Agreement.md",
+        "DOC:05_Solara_Agreements_and_Email.md"
+      ]
+    },
+    {
+      "finding_id": "F2",
+      "finding": "Missing evidence is associated with a major deterioration in SLA performance.",
+      "category": "INFORMATION",
+      "evidence_type": "DERIVED",
+      "confidence": 1.0,
+      "support": [
+        "Missing-evidence cases achieved 13.3% SLA attainment versus 68.6% when evidence was not missing.",
+        "Average resolution time is 14.4 days with missing evidence versus 5.8 days without it."
+      ],
+      "operational_impact": "Cases lacking evidence are disproportionately likely to miss service targets and remain open longer.",
+      "evidence_refs": [
+        "QUANT:missing_evidence_impact"
+      ]
+    },
+    {
+      "finding_id": "F3",
+      "finding": "Supplier-specific terms create decision complexity that cannot be safely resolved using generic policy alone.",
+      "category": "POLICY",
+      "evidence_type": "DIRECT",
+      "confidence": 0.99,
+      "support": [
+        "NorthStar changes standard dispute windows, freight terms, and promotional pricing logic.",
+        "Apex introduces quantity tolerances and mixed materials/services treatment.",
+        "Solara contains time-limited freight amendments and an unresolved continuation trail."
+      ],
+      "operational_impact": "Analysts must locate and correctly sequence supplier-specific agreements before applying standard rules.",
+      "evidence_refs": [
+        "DOC:03_NorthStar_Agreements.md",
+        "DOC:04_Apex_Agreement.md",
+        "DOC:05_Solara_Agreements_and_Email.md"
+      ]
+    },
+    {
+      "finding_id": "F4",
+      "finding": "Historical treatment is an unreliable substitute for current authoritative evidence.",
+      "category": "CONTROL",
+      "evidence_type": "DIRECT",
+      "confidence": 0.98,
+      "support": [
+        "Generic policy explicitly warns that prior cases may be outdated, erroneous, or one-time exceptions.",
+        "A selected contract case contains prior notes such as 'approved per buyer' and 'exception \u2014 pay this time only' that do not establish governing terms."
+      ],
+      "operational_impact": "Weak precedent can propagate inconsistent or unsupported decisions and reduce auditability.",
+      "evidence_refs": [
+        "DOC:02_Vendor_Commercial_Terms_Policy.md",
+        "CASE:MRG-2026-0018"
+      ]
+    },
+    {
+      "finding_id": "F5",
+      "finding": "Reopened disputes represent substantial rework rather than a minor administrative event.",
+      "category": "PROCESS",
+      "evidence_type": "DERIVED",
+      "confidence": 1.0,
+      "support": [
+        "Reopened cases average 40.2 handling minutes versus 21.3 for non-reopened cases.",
+        "Reopened cases average 10.2 resolution days versus 6.3 otherwise."
+      ],
+      "operational_impact": "Reopening consumes additional analyst capacity and extends end-to-end cycle time.",
+      "evidence_refs": [
+        "QUANT:reopened_case_profile"
+      ]
+    },
+    {
+      "finding_id": "F6",
+      "finding": "Some disputes are composite cases that require component-level treatment rather than a single invoice-level binary decision.",
+      "category": "DECISION",
+      "evidence_type": "DIRECT",
+      "confidence": 0.98,
+      "support": [
+        "Apex agreement requires materials and installation portions of mixed invoices to be validated independently.",
+        "A selected Apex case contains valid materials and labor but unsupported freight."
+      ],
+      "operational_impact": "A simplistic resolve/reject workflow can hold valid amounts unnecessarily or produce incorrect whole-invoice decisions.",
+      "evidence_refs": [
+        "DOC:04_Apex_Agreement.md",
+        "CASE:MRG-2026-0139"
+      ]
+    },
+    {
+      "finding_id": "F7",
+      "finding": "The current operating model relies heavily on analysts to recognize when ambiguity requires specialist authority rather than individual interpretation.",
+      "category": "PEOPLE_OPERATING_MODEL",
+      "evidence_type": "DIRECT",
+      "confidence": 0.96,
+      "support": [
+        "SOP and policy require escalation to Procurement, Tax, Receiving, or Logistics under different ambiguity conditions.",
+        "Solara freight and tax examples cannot be resolved safely by AP alone."
+      ],
+      "operational_impact": "Outcome quality depends on analyst judgment about when to resolve versus escalate, creating potential variation across employees.",
+      "evidence_refs": [
+        "DOC:01_AP_Dispute_Resolution_SOP.md",
+        "DOC:02_Vendor_Commercial_Terms_Policy.md",
+        "CASE:MRG-2026-0184",
+        "CASE:MRG-2026-0147"
+      ]
+    }
+  ],
+  "source_conflicts": [
+    {
+      "conflict_id": "C1",
+      "description": "Solara's executed freight amendments expire at December 31, 2025, while a Procurement email states that the existing setup should continue into 2026 and an unsigned draft proposes formal 2026 terms.",
+      "sources": [
+        "DOC:05_Solara_Agreements_and_Email.md"
+      ],
+      "why_unresolved": "Meridian policy states that informal email does not ordinarily override executed commercial documentation, and the proposed Amendment 3 is explicitly unexecuted.",
+      "required_authority": "Procurement / Legal confirmation of the governing 2026 freight terms."
+    }
+  ],
+  "diagnostic_hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "hypothesis": "Evidence retrieval and completeness are likely meaningful drivers of end-to-end delay in the dispute process.",
+      "basis": [
+        "Missing-evidence cases show 13.3% SLA attainment versus 68.6% without missing evidence.",
+        "The SOP requires analysts to retrieve evidence from several repositories and functions."
+      ],
+      "confidence": 0.9,
+      "how_to_test": [
+        "Measure active search/retrieval time separately from decision time.",
+        "Track time spent in PENDING INFORMATION by reason code and supplier.",
+        "Instrument repository/system access sequence for a representative sample."
+      ]
+    },
+    {
+      "hypothesis_id": "H2",
+      "hypothesis": "Policy and contract interpretation likely explain a disproportionate share of high-complexity cases even if they are not the largest volume category.",
+      "basis": [
+        "Supplier-specific agreements contain multiple overrides and ambiguity patterns.",
+        "Contract disputes require document precedence and specialist escalation when terms conflict."
+      ],
+      "confidence": 0.82,
+      "how_to_test": [
+        "Compare handling time and SLA by confirmed root cause, not only intake reason code.",
+        "Measure document count and escalation rate for contract-related cases.",
+        "Review a sample of reopened cases for contract/policy interpretation errors."
+      ]
+    },
+    {
+      "hypothesis_id": "H3",
+      "hypothesis": "Variation in analyst outcomes may partly reflect inconsistent access to institutional knowledge and escalation judgment rather than individual productivity alone.",
+      "basis": [
+        "Policies require judgment about when to escalate.",
+        "Historical precedent is explicitly unreliable.",
+        "The process depends on supplier-specific and context-specific rules."
+      ],
+      "confidence": 0.72,
+      "how_to_test": [
+        "Compare analysts after controlling for case mix and supplier.",
+        "Review escalation decisions for similar case archetypes.",
+        "Interview analysts regarding undocumented supplier-specific knowledge."
+      ]
+    }
+  ],
+  "limitations": [
+    "The historical client-facing dataset does not contain authoritative actual-root-cause labels, so intake reason-code accuracy cannot be independently validated in this diagnosis.",
+    "Historical resolution outcomes are observations, not proof that the underlying decision was correct.",
+    "The dataset is a 250-case synthetic sample rather than the full 180,000-case annual population.",
+    "Resolution-days data combines internal work and waiting time; it does not isolate active processing from external dependencies.",
+    "The current dataset does not contain a direct measure of search time, queue time, or time spent in PENDING INFORMATION.",
+    "No employee interviews or system telemetry are included in the current source pack."
+  ]
+}
