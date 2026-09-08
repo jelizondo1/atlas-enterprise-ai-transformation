@@ -1,0 +1,7 @@
+{
+  "tests_run": 121,
+  "passed": true,
+  "failures": 0,
+  "errors": 0,
+  "scope": "Deterministic mapping/ROI/authority, read-only workbench, mocked model integration, semantic gating and offline Streamlit tests. No live benchmark."
+}

@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "Relocated repository: twelve read-only dossiers built without workspace dependencies",
+      "pass": true
+    },
+    {
+      "check": "Relocated quantitative analyzer reproduces the authoritative JSON exactly",
+      "pass": true
+    },
+    {
+      "check": "Relocated diagnosis builder assembles 28 allowed source sections",
+      "pass": true
+    },
+    {
+      "check": "Relocated ROI engine retains unestimated Meridian status",
+      "pass": true
+    },
+    {
+      "check": "Live batch with missing credential exits before requests or run creation",
+      "pass": true
+    },
+    {
+      "check": "Three bounded dry requests prepare successfully without network or live accounting",
+      "pass": true
+    }
+  ],
+  "environment": "Fresh Python 3.12 virtual environment installed only from public requirements; repository copied to a separate temporary location",
+  "live_requests": 0
+}

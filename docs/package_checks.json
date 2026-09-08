@@ -1,0 +1,1077 @@
+{
+  "checks": [
+    {
+      "check": "Public lineage source_pack/01_AP_Dispute_Resolution_SOP.md",
+      "pass": true
+    },
+    {
+      "check": "Original source bytes source_pack/01_AP_Dispute_Resolution_SOP.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage source_pack/02_Vendor_Commercial_Terms_Policy.md",
+      "pass": true
+    },
+    {
+      "check": "Original source bytes source_pack/02_Vendor_Commercial_Terms_Policy.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage source_pack/03_NorthStar_Agreements.md",
+      "pass": true
+    },
+    {
+      "check": "Original source bytes source_pack/03_NorthStar_Agreements.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage source_pack/04_Apex_Agreement.md",
+      "pass": true
+    },
+    {
+      "check": "Original source bytes source_pack/04_Apex_Agreement.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage source_pack/05_Solara_Agreements_and_Email.md",
+      "pass": true
+    },
+    {
+      "check": "Original source bytes source_pack/05_Solara_Agreements_and_Email.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage source_pack/meridian_disputes_250.csv",
+      "pass": true
+    },
+    {
+      "check": "Original source bytes source_pack/meridian_disputes_250.csv",
+      "pass": true
+    },
+    {
+      "check": "Public lineage source_pack/06_Unstructured_Case_Evidence/MRG-2026-0003.md",
+      "pass": true
+    },
+    {
+      "check": "Original source bytes source_pack/06_Unstructured_Case_Evidence/MRG-2026-0003.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage source_pack/06_Unstructured_Case_Evidence/MRG-2026-0018.md",
+      "pass": true
+    },
+    {
+      "check": "Original source bytes source_pack/06_Unstructured_Case_Evidence/MRG-2026-0018.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage source_pack/06_Unstructured_Case_Evidence/MRG-2026-0022.md",
+      "pass": true
+    },
+    {
+      "check": "Original source bytes source_pack/06_Unstructured_Case_Evidence/MRG-2026-0022.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage source_pack/06_Unstructured_Case_Evidence/MRG-2026-0026.md",
+      "pass": true
+    },
+    {
+      "check": "Original source bytes source_pack/06_Unstructured_Case_Evidence/MRG-2026-0026.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage source_pack/06_Unstructured_Case_Evidence/MRG-2026-0139.md",
+      "pass": true
+    },
+    {
+      "check": "Original source bytes source_pack/06_Unstructured_Case_Evidence/MRG-2026-0139.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage source_pack/06_Unstructured_Case_Evidence/MRG-2026-0143.md",
+      "pass": true
+    },
+    {
+      "check": "Original source bytes source_pack/06_Unstructured_Case_Evidence/MRG-2026-0143.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage source_pack/06_Unstructured_Case_Evidence/MRG-2026-0147.md",
+      "pass": true
+    },
+    {
+      "check": "Original source bytes source_pack/06_Unstructured_Case_Evidence/MRG-2026-0147.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage source_pack/06_Unstructured_Case_Evidence/MRG-2026-0159.md",
+      "pass": true
+    },
+    {
+      "check": "Original source bytes source_pack/06_Unstructured_Case_Evidence/MRG-2026-0159.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage source_pack/06_Unstructured_Case_Evidence/MRG-2026-0168.md",
+      "pass": true
+    },
+    {
+      "check": "Original source bytes source_pack/06_Unstructured_Case_Evidence/MRG-2026-0168.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage source_pack/06_Unstructured_Case_Evidence/MRG-2026-0184.md",
+      "pass": true
+    },
+    {
+      "check": "Original source bytes source_pack/06_Unstructured_Case_Evidence/MRG-2026-0184.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage source_pack/06_Unstructured_Case_Evidence/MRG-2026-0213.md",
+      "pass": true
+    },
+    {
+      "check": "Original source bytes source_pack/06_Unstructured_Case_Evidence/MRG-2026-0213.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage source_pack/06_Unstructured_Case_Evidence/MRG-2026-0215.md",
+      "pass": true
+    },
+    {
+      "check": "Original source bytes source_pack/06_Unstructured_Case_Evidence/MRG-2026-0215.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage diagnostics/atlas_diagnostics.py",
+      "pass": true
+    },
+    {
+      "check": "Public lineage diagnostics/meridian_quantitative_diagnostics.json",
+      "pass": true
+    },
+    {
+      "check": "Public lineage diagnostics/meridian_quantitative_diagnostics.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage reasoning/atlas_diagnosis_schema.json",
+      "pass": true
+    },
+    {
+      "check": "Public lineage reasoning/atlas_diagnosis_system_prompt.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage reasoning/meridian_atlas_v0_diagnosis.json",
+      "pass": true
+    },
+    {
+      "check": "Public lineage reasoning/meridian_atlas_v0_diagnosis.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage impact_sizing/meridian_annualized_impact_sizing.json",
+      "pass": true
+    },
+    {
+      "check": "Public lineage impact_sizing/meridian_annualized_impact_sizing.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage impact_sizing/meridian_annualized_impact_lenses.csv",
+      "pass": true
+    },
+    {
+      "check": "Public lineage opportunity_mapping/meridian_opportunity_map_final.json",
+      "pass": true
+    },
+    {
+      "check": "Public lineage opportunity_mapping/meridian_opportunity_map_report.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage opportunity_mapping/atlas_opportunity_map.schema.json",
+      "pass": true
+    },
+    {
+      "check": "Public lineage opportunity_mapping/atlas_opportunity_mapping_system_prompt.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage opportunity_mapping/taxonomy_and_rules.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage opportunity_mapping/evaluation_rubric.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage roi_operating_model/roi_engine.py",
+      "pass": true
+    },
+    {
+      "check": "Public lineage roi_operating_model/workflow_guards.py",
+      "pass": true
+    },
+    {
+      "check": "Public lineage roi_operating_model/roi_input.schema.json",
+      "pass": true
+    },
+    {
+      "check": "Public lineage roi_operating_model/roi_output.schema.json",
+      "pass": true
+    },
+    {
+      "check": "Public lineage roi_operating_model/meridian_roi_inputs.json",
+      "pass": true
+    },
+    {
+      "check": "Public lineage roi_operating_model/meridian_roi_results.json",
+      "pass": true
+    },
+    {
+      "check": "Public lineage roi_operating_model/future_state_operating_model.json",
+      "pass": true
+    },
+    {
+      "check": "Public lineage roi_operating_model/roi_method_and_input_guide.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage roi_operating_model/pilot_charter.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage roi_operating_model/pilot_acceptance_parameters.json",
+      "pass": true
+    },
+    {
+      "check": "Public lineage roi_operating_model/pilot_measurement_record.template.json",
+      "pass": true
+    },
+    {
+      "check": "Public lineage workbench/workbench.py",
+      "pass": true
+    },
+    {
+      "check": "Public lineage workbench/measurements.py",
+      "pass": true
+    },
+    {
+      "check": "Public lineage model_integration/model_runner.py",
+      "pass": true
+    },
+    {
+      "check": "Public lineage model_integration/evaluate_run.py",
+      "pass": true
+    },
+    {
+      "check": "Public lineage model_integration/summarize_benchmark.py",
+      "pass": true
+    },
+    {
+      "check": "Public lineage model_integration/generation_prompt.md",
+      "pass": true
+    },
+    {
+      "check": "Public lineage model_integration/draft.schema.json",
+      "pass": true
+    },
+    {
+      "check": "Public lineage model_integration/runner_config.json",
+      "pass": true
+    },
+    {
+      "check": "Public lineage tests/test_roi.py",
+      "pass": true
+    },
+    {
+      "check": "Public lineage tests/test_workbench.py",
+      "pass": true
+    },
+    {
+      "check": "Public lineage tests/test_integration.py",
+      "pass": true
+    },
+    {
+      "check": "Public lineage reasoning/build_diagnosis_context.py",
+      "pass": true
+    },
+    {
+      "check": "Public lineage source_pack/README.md",
+      "pass": true
+    },
+    {
+      "check": "Source integrity source_pack/01_AP_Dispute_Resolution_SOP.md",
+      "pass": true
+    },
+    {
+      "check": "Source integrity source_pack/02_Vendor_Commercial_Terms_Policy.md",
+      "pass": true
+    },
+    {
+      "check": "Source integrity source_pack/03_NorthStar_Agreements.md",
+      "pass": true
+    },
+    {
+      "check": "Source integrity source_pack/04_Apex_Agreement.md",
+      "pass": true
+    },
+    {
+      "check": "Source integrity source_pack/05_Solara_Agreements_and_Email.md",
+      "pass": true
+    },
+    {
+      "check": "Source integrity source_pack/06_Unstructured_Case_Evidence/MRG-2026-0003.md",
+      "pass": true
+    },
+    {
+      "check": "Source integrity source_pack/06_Unstructured_Case_Evidence/MRG-2026-0018.md",
+      "pass": true
+    },
+    {
+      "check": "Source integrity source_pack/06_Unstructured_Case_Evidence/MRG-2026-0022.md",
+      "pass": true
+    },
+    {
+      "check": "Source integrity source_pack/06_Unstructured_Case_Evidence/MRG-2026-0026.md",
+      "pass": true
+    },
+    {
+      "check": "Source integrity source_pack/06_Unstructured_Case_Evidence/MRG-2026-0139.md",
+      "pass": true
+    },
+    {
+      "check": "Source integrity source_pack/06_Unstructured_Case_Evidence/MRG-2026-0143.md",
+      "pass": true
+    },
+    {
+      "check": "Source integrity source_pack/06_Unstructured_Case_Evidence/MRG-2026-0147.md",
+      "pass": true
+    },
+    {
+      "check": "Source integrity source_pack/06_Unstructured_Case_Evidence/MRG-2026-0159.md",
+      "pass": true
+    },
+    {
+      "check": "Source integrity source_pack/06_Unstructured_Case_Evidence/MRG-2026-0168.md",
+      "pass": true
+    },
+    {
+      "check": "Source integrity source_pack/06_Unstructured_Case_Evidence/MRG-2026-0184.md",
+      "pass": true
+    },
+    {
+      "check": "Source integrity source_pack/06_Unstructured_Case_Evidence/MRG-2026-0213.md",
+      "pass": true
+    },
+    {
+      "check": "Source integrity source_pack/06_Unstructured_Case_Evidence/MRG-2026-0215.md",
+      "pass": true
+    },
+    {
+      "check": "Source integrity source_pack/meridian_disputes_250.csv",
+      "pass": true
+    },
+    {
+      "check": "Opportunity map schema",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source DIAG",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source IMPACT",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source QUANT",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source CSV",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source F1",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source F2",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source F3",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source F4",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source F5",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source F6",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source F7",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source C1",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source P5",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source L1",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source L2",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source L3",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source L4",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source ASSUMPTIONS",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source DOC:01_AP_Dispute_Resolution_SOP.md",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source DOC:02_Vendor_Commercial_Terms_Policy.md",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source DOC:03_NorthStar_Agreements.md",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source DOC:04_Apex_Agreement.md",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source DOC:05_Solara_Agreements_and_Email.md",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source DOC:README.md",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source CASE:MRG-2026-0003",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source CASE:MRG-2026-0018",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source CASE:MRG-2026-0022",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source CASE:MRG-2026-0026",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source CASE:MRG-2026-0139",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source CASE:MRG-2026-0143",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source CASE:MRG-2026-0147",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source CASE:MRG-2026-0159",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source CASE:MRG-2026-0168",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source CASE:MRG-2026-0184",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source CASE:MRG-2026-0213",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source CASE:MRG-2026-0215",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source QUANT:overall",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source QUANT:by_system_reason_code",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source QUANT:by_supplier",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source QUANT:by_analyst",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source QUANT:by_resolution",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source QUANT:missing_evidence_impact",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source QUANT:reopened_case_profile",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source QUANT:priority_supplier_profile",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source QUANT:system_complexity_bands",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source QUANT:correlations",
+      "pass": true
+    },
+    {
+      "check": "Opportunity source QUANT:concentration",
+      "pass": true
+    },
+    {
+      "check": "ROI schema meridian_roi_inputs.json",
+      "pass": true
+    },
+    {
+      "check": "ROI schema meridian_roi_results.json",
+      "pass": true
+    },
+    {
+      "check": "Isolated context MRG-2026-0003",
+      "pass": true
+    },
+    {
+      "check": "Safe request MRG-2026-0003",
+      "pass": true
+    },
+    {
+      "check": "Fail closed MRG-2026-0003",
+      "pass": true
+    },
+    {
+      "check": "Isolated context MRG-2026-0018",
+      "pass": true
+    },
+    {
+      "check": "Safe request MRG-2026-0018",
+      "pass": true
+    },
+    {
+      "check": "Fail closed MRG-2026-0018",
+      "pass": true
+    },
+    {
+      "check": "Isolated context MRG-2026-0022",
+      "pass": true
+    },
+    {
+      "check": "Safe request MRG-2026-0022",
+      "pass": true
+    },
+    {
+      "check": "Fail closed MRG-2026-0022",
+      "pass": true
+    },
+    {
+      "check": "Isolated context MRG-2026-0026",
+      "pass": true
+    },
+    {
+      "check": "Safe request MRG-2026-0026",
+      "pass": true
+    },
+    {
+      "check": "Fail closed MRG-2026-0026",
+      "pass": true
+    },
+    {
+      "check": "Isolated context MRG-2026-0139",
+      "pass": true
+    },
+    {
+      "check": "Safe request MRG-2026-0139",
+      "pass": true
+    },
+    {
+      "check": "Fail closed MRG-2026-0139",
+      "pass": true
+    },
+    {
+      "check": "Isolated context MRG-2026-0143",
+      "pass": true
+    },
+    {
+      "check": "Safe request MRG-2026-0143",
+      "pass": true
+    },
+    {
+      "check": "Fail closed MRG-2026-0143",
+      "pass": true
+    },
+    {
+      "check": "Isolated context MRG-2026-0147",
+      "pass": true
+    },
+    {
+      "check": "Safe request MRG-2026-0147",
+      "pass": true
+    },
+    {
+      "check": "Fail closed MRG-2026-0147",
+      "pass": true
+    },
+    {
+      "check": "Isolated context MRG-2026-0159",
+      "pass": true
+    },
+    {
+      "check": "Safe request MRG-2026-0159",
+      "pass": true
+    },
+    {
+      "check": "Fail closed MRG-2026-0159",
+      "pass": true
+    },
+    {
+      "check": "Isolated context MRG-2026-0168",
+      "pass": true
+    },
+    {
+      "check": "Safe request MRG-2026-0168",
+      "pass": true
+    },
+    {
+      "check": "Fail closed MRG-2026-0168",
+      "pass": true
+    },
+    {
+      "check": "Isolated context MRG-2026-0184",
+      "pass": true
+    },
+    {
+      "check": "Safe request MRG-2026-0184",
+      "pass": true
+    },
+    {
+      "check": "Fail closed MRG-2026-0184",
+      "pass": true
+    },
+    {
+      "check": "Isolated context MRG-2026-0213",
+      "pass": true
+    },
+    {
+      "check": "Safe request MRG-2026-0213",
+      "pass": true
+    },
+    {
+      "check": "Fail closed MRG-2026-0213",
+      "pass": true
+    },
+    {
+      "check": "Isolated context MRG-2026-0215",
+      "pass": true
+    },
+    {
+      "check": "Safe request MRG-2026-0215",
+      "pass": true
+    },
+    {
+      "check": "Fail closed MRG-2026-0215",
+      "pass": true
+    },
+    {
+      "check": "250 rows and exact handling mean",
+      "pass": true
+    },
+    {
+      "check": "Exact annualized active hours",
+      "pass": true
+    },
+    {
+      "check": "Team cost is context",
+      "pass": true
+    },
+    {
+      "check": "Actual ROI remains unknown",
+      "pass": true
+    },
+    {
+      "check": "Featured case supplier source match",
+      "pass": true
+    },
+    {
+      "check": "Bounded timeout and batch",
+      "pass": true
+    },
+    {
+      "check": "Local link README.md -> docs/images/demo-0139.png",
+      "pass": true
+    },
+    {
+      "check": "Local link README.md -> demo/README.md",
+      "pass": true
+    },
+    {
+      "check": "Local link README.md -> diagnostics/meridian_quantitative_diagnostics.json",
+      "pass": true
+    },
+    {
+      "check": "Local link README.md -> impact_sizing/meridian_annualized_impact_sizing.json",
+      "pass": true
+    },
+    {
+      "check": "Local link README.md -> opportunity_mapping/meridian_opportunity_map_report.md",
+      "pass": true
+    },
+    {
+      "check": "Local link README.md -> docs/architecture.md",
+      "pass": true
+    },
+    {
+      "check": "Local link README.md -> evaluation/README.md",
+      "pass": true
+    },
+    {
+      "check": "Local link README.md -> model_integration/README.md",
+      "pass": true
+    },
+    {
+      "check": "Local link README.md -> roi_operating_model/roi_method_and_input_guide.md",
+      "pass": true
+    },
+    {
+      "check": "Local link README.md -> roi_operating_model/meridian_roi_inputs.json",
+      "pass": true
+    },
+    {
+      "check": "Local link README.md -> docs/validation_report.md",
+      "pass": true
+    },
+    {
+      "check": "Local link README.md -> docs/public_release_scrub.md",
+      "pass": true
+    },
+    {
+      "check": "Local link README.md -> docs/release_checklist.md",
+      "pass": true
+    },
+    {
+      "check": "Local link README.md -> docs/known_limitations.md",
+      "pass": true
+    },
+    {
+      "check": "Local link README.md -> docs/interview/README.md",
+      "pass": true
+    },
+    {
+      "check": "Local link docs/pre_publish_review.md -> ../README.md",
+      "pass": true
+    },
+    {
+      "check": "Local link docs/pre_publish_review.md -> folder_tree.txt",
+      "pass": true
+    },
+    {
+      "check": "Local link docs/pre_publish_review.md -> architecture.md",
+      "pass": true
+    },
+    {
+      "check": "Local link docs/pre_publish_review.md -> images/demo-0018.png",
+      "pass": true
+    },
+    {
+      "check": "Local link docs/pre_publish_review.md -> images/demo-0139.png",
+      "pass": true
+    },
+    {
+      "check": "Local link docs/pre_publish_review.md -> images/demo-0184.png",
+      "pass": true
+    },
+    {
+      "check": "Local link docs/pre_publish_review.md -> images/demo-human-review.png",
+      "pass": true
+    },
+    {
+      "check": "Local link docs/pre_publish_review.md -> ../demo/README.md",
+      "pass": true
+    },
+    {
+      "check": "Local link docs/pre_publish_review.md -> interview/README.md",
+      "pass": true
+    },
+    {
+      "check": "Local link docs/pre_publish_review.md -> validation_report.md",
+      "pass": true
+    },
+    {
+      "check": "Local link docs/pre_publish_review.md -> public_release_scrub.md",
+      "pass": true
+    },
+    {
+      "check": "Local link docs/pre_publish_review.md -> known_limitations.md",
+      "pass": true
+    },
+    {
+      "check": "Local link docs/pre_publish_review.md -> release_files.txt",
+      "pass": true
+    },
+    {
+      "check": "Local link docs/pre_publish_review.md -> release_manifest.json",
+      "pass": true
+    },
+    {
+      "check": "Local link docs/provenance.md -> provenance.json",
+      "pass": true
+    },
+    {
+      "check": "Local link docs/validation_report.md -> software_checks.json",
+      "pass": true
+    },
+    {
+      "check": "Local link docs/validation_report.md -> package_checks.json",
+      "pass": true
+    },
+    {
+      "check": "Local link docs/validation_report.md -> browser_checks.json",
+      "pass": true
+    },
+    {
+      "check": "Local link docs/validation_report.md -> clean_environment_checks.json",
+      "pass": true
+    },
+    {
+      "check": "Local link docs/validation_report.md -> public_release_scrub.md",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../docs/provenance.json",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../impact_sizing/meridian_annualized_impact_sizing.json",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../diagnostics/meridian_quantitative_diagnostics.json",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../reasoning/meridian_atlas_v0_diagnosis.json",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../source_pack/01_AP_Dispute_Resolution_SOP.md",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../source_pack/03_NorthStar_Agreements.md",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../source_pack/04_Apex_Agreement.md",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../source_pack/05_Solara_Agreements_and_Email.md",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../impact_sizing/meridian_annualized_impact_sizing.json",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../reasoning/meridian_atlas_v0_diagnosis.json",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../diagnostics/meridian_quantitative_diagnostics.json",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../impact_sizing/meridian_annualized_impact_sizing.json",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../reasoning/meridian_atlas_v0_diagnosis.json",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../source_pack/03_NorthStar_Agreements.md",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../source_pack/04_Apex_Agreement.md",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../source_pack/05_Solara_Agreements_and_Email.md",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../reasoning/meridian_atlas_v0_diagnosis.json",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../source_pack/02_Vendor_Commercial_Terms_Policy.md",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../source_pack/06_Unstructured_Case_Evidence/MRG-2026-0018.md",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../reasoning/meridian_atlas_v0_diagnosis.json",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../diagnostics/meridian_quantitative_diagnostics.json",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../impact_sizing/meridian_annualized_impact_sizing.json",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../reasoning/meridian_atlas_v0_diagnosis.json",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../source_pack/04_Apex_Agreement.md",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../source_pack/06_Unstructured_Case_Evidence/MRG-2026-0139.md",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../reasoning/meridian_atlas_v0_diagnosis.json",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../source_pack/01_AP_Dispute_Resolution_SOP.md",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../source_pack/02_Vendor_Commercial_Terms_Policy.md",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../source_pack/06_Unstructured_Case_Evidence/MRG-2026-0184.md",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../source_pack/06_Unstructured_Case_Evidence/MRG-2026-0147.md",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../impact_sizing/meridian_annualized_impact_sizing.json",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../source_pack/03_NorthStar_Agreements.md",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../reasoning/meridian_atlas_v0_diagnosis.json",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../source_pack/05_Solara_Agreements_and_Email.md",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../reasoning/meridian_atlas_v0_diagnosis.json",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../source_pack/01_AP_Dispute_Resolution_SOP.md",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../source_pack/02_Vendor_Commercial_Terms_Policy.md",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../source_pack/03_NorthStar_Agreements.md",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../source_pack/04_Apex_Agreement.md",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../docs/validation_report.md",
+      "pass": true
+    },
+    {
+      "check": "Local link opportunity_mapping/meridian_opportunity_map_report.md -> ../docs/validation_report.md",
+      "pass": true
+    },
+    {
+      "check": "Local link roi_operating_model/pilot_charter.md -> ../opportunity_mapping/meridian_opportunity_map_final.json",
+      "pass": true
+    },
+    {
+      "check": "Local link roi_operating_model/pilot_charter.md -> pilot_acceptance_parameters.json",
+      "pass": true
+    },
+    {
+      "check": "Local link roi_operating_model/roi_method_and_input_guide.md -> ../opportunity_mapping/meridian_opportunity_map_final.json",
+      "pass": true
+    },
+    {
+      "check": "Secret and machine-path scan",
+      "pass": true
+    },
+    {
+      "check": "No generated runtime files selected",
+      "pass": true
+    }
+  ],
+  "checks_run": 267,
+  "passed": true,
+  "failed": [],
+  "scrub_findings": [],
+  "scope": "Static public package, source lineage, schemas, arithmetic, offline boundaries and local documentation links; no live model claims."
+}

@@ -1,0 +1,350 @@
+[
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day1_Meridian_Source_Pack/01_AP_Dispute_Resolution_SOP.md",
+    "public_file": "source_pack/01_AP_Dispute_Resolution_SOP.md",
+    "original_sha256": "82b014643273cdc9f76aacc3440164d73e8e4ff09f0c06e2dbf393cbf2b01b94",
+    "public_sha256": "82b014643273cdc9f76aacc3440164d73e8e4ff09f0c06e2dbf393cbf2b01b94"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day1_Meridian_Source_Pack/02_Vendor_Commercial_Terms_Policy.md",
+    "public_file": "source_pack/02_Vendor_Commercial_Terms_Policy.md",
+    "original_sha256": "b9f2e4d0f5414c5b3b18a1a9da35bc739bbfa590942440c4e59bd2f6f0b39657",
+    "public_sha256": "b9f2e4d0f5414c5b3b18a1a9da35bc739bbfa590942440c4e59bd2f6f0b39657"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day1_Meridian_Source_Pack/03_NorthStar_Agreements.md",
+    "public_file": "source_pack/03_NorthStar_Agreements.md",
+    "original_sha256": "b708e85ba0a40c52912ededf5b67f0c98c00d8a26b7073c536ddd9c0639905ac",
+    "public_sha256": "b708e85ba0a40c52912ededf5b67f0c98c00d8a26b7073c536ddd9c0639905ac"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day1_Meridian_Source_Pack/04_Apex_Agreement.md",
+    "public_file": "source_pack/04_Apex_Agreement.md",
+    "original_sha256": "516218f922534f3dfda2dff1a2e4db07e8510c8798851707a2a186506c2d6405",
+    "public_sha256": "516218f922534f3dfda2dff1a2e4db07e8510c8798851707a2a186506c2d6405"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day1_Meridian_Source_Pack/05_Solara_Agreements_and_Email.md",
+    "public_file": "source_pack/05_Solara_Agreements_and_Email.md",
+    "original_sha256": "12dc1d45cd2f6f0a025a40ee6e2cf396b101142ebc633a97ac9de879637cb960",
+    "public_sha256": "12dc1d45cd2f6f0a025a40ee6e2cf396b101142ebc633a97ac9de879637cb960"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day1_Meridian_Source_Pack/atlas_day1_meridian_disputes_250.csv",
+    "public_file": "source_pack/meridian_disputes_250.csv",
+    "original_sha256": "90ab2a5b3146990dbc81079604106a4f3a77baf27185f92b3b6a367f099b8929",
+    "public_sha256": "90ab2a5b3146990dbc81079604106a4f3a77baf27185f92b3b6a367f099b8929"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day1_Meridian_Source_Pack/06_Unstructured_Case_Evidence/MRG-2026-0003.md",
+    "public_file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0003.md",
+    "original_sha256": "f63667e5a210e76d329636953772ff45feae1cb6c706e0ac7d9dc884ad89ede1",
+    "public_sha256": "f63667e5a210e76d329636953772ff45feae1cb6c706e0ac7d9dc884ad89ede1"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day1_Meridian_Source_Pack/06_Unstructured_Case_Evidence/MRG-2026-0018.md",
+    "public_file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0018.md",
+    "original_sha256": "e7b7567b1ae79e863def0f50a1503289d10e357c1fd0fb752d8fde3d135e8179",
+    "public_sha256": "e7b7567b1ae79e863def0f50a1503289d10e357c1fd0fb752d8fde3d135e8179"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day1_Meridian_Source_Pack/06_Unstructured_Case_Evidence/MRG-2026-0022.md",
+    "public_file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0022.md",
+    "original_sha256": "0651ca16804e416e99821bda54312ef612edad7268b6477272de42534b9b82b0",
+    "public_sha256": "0651ca16804e416e99821bda54312ef612edad7268b6477272de42534b9b82b0"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day1_Meridian_Source_Pack/06_Unstructured_Case_Evidence/MRG-2026-0026.md",
+    "public_file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0026.md",
+    "original_sha256": "44c5dceae2bb7e17191712a7c7134755941e370feb5eff853f488ca0b71131c0",
+    "public_sha256": "44c5dceae2bb7e17191712a7c7134755941e370feb5eff853f488ca0b71131c0"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day1_Meridian_Source_Pack/06_Unstructured_Case_Evidence/MRG-2026-0139.md",
+    "public_file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0139.md",
+    "original_sha256": "bca0499c5913118e536742ac7971426fc3b22917655eb9388a2ea1a7b36feec0",
+    "public_sha256": "bca0499c5913118e536742ac7971426fc3b22917655eb9388a2ea1a7b36feec0"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day1_Meridian_Source_Pack/06_Unstructured_Case_Evidence/MRG-2026-0143.md",
+    "public_file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0143.md",
+    "original_sha256": "3d59780742af1c4aa57145399be9bf94ac0122c3fd529d639107225b4deedb40",
+    "public_sha256": "3d59780742af1c4aa57145399be9bf94ac0122c3fd529d639107225b4deedb40"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day1_Meridian_Source_Pack/06_Unstructured_Case_Evidence/MRG-2026-0147.md",
+    "public_file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0147.md",
+    "original_sha256": "fa83a06885a881097f5f80d9db244665ed12077e0a9712c88e068901f54b917e",
+    "public_sha256": "fa83a06885a881097f5f80d9db244665ed12077e0a9712c88e068901f54b917e"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day1_Meridian_Source_Pack/06_Unstructured_Case_Evidence/MRG-2026-0159.md",
+    "public_file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0159.md",
+    "original_sha256": "bd8cb8cdc13e4244bf64644b6d4949faaa1b3f9326bce5655cd11c73f0f508f7",
+    "public_sha256": "bd8cb8cdc13e4244bf64644b6d4949faaa1b3f9326bce5655cd11c73f0f508f7"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day1_Meridian_Source_Pack/06_Unstructured_Case_Evidence/MRG-2026-0168.md",
+    "public_file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0168.md",
+    "original_sha256": "c52df47c3e55482181d222620b0aca1ab302c61929b45629370f46597ede368d",
+    "public_sha256": "c52df47c3e55482181d222620b0aca1ab302c61929b45629370f46597ede368d"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day1_Meridian_Source_Pack/06_Unstructured_Case_Evidence/MRG-2026-0184.md",
+    "public_file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0184.md",
+    "original_sha256": "8c2e59413bd3b966e9e2e0261ad87d7a4f954de97303ac8788e38703a8c40a3c",
+    "public_sha256": "8c2e59413bd3b966e9e2e0261ad87d7a4f954de97303ac8788e38703a8c40a3c"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day1_Meridian_Source_Pack/06_Unstructured_Case_Evidence/MRG-2026-0213.md",
+    "public_file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0213.md",
+    "original_sha256": "96a0e446cf2e5c08b8941cf9e24713d54fc49f1ce93ae142cb0b993242e17180",
+    "public_sha256": "96a0e446cf2e5c08b8941cf9e24713d54fc49f1ce93ae142cb0b993242e17180"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day1_Meridian_Source_Pack/06_Unstructured_Case_Evidence/MRG-2026-0215.md",
+    "public_file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0215.md",
+    "original_sha256": "003b1142480c7709de3a783cc3743c344d13e3fe8b89d15f7e0a3e751b5eacc4",
+    "public_sha256": "003b1142480c7709de3a783cc3743c344d13e3fe8b89d15f7e0a3e751b5eacc4"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day2_Diagnostic_Analyzer/atlas_diagnostics.py",
+    "public_file": "diagnostics/atlas_diagnostics.py",
+    "original_sha256": "04ec0fb03f8c6d9d28a3a4a12229323d39bb97ca8da2f3871bf26041b0abf4be",
+    "public_sha256": "c9418a7ed48b5184b2595a840b0bde891b4a9035634ba733a0d70f6e952ebe72"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day2_Diagnostic_Analyzer/meridian_quantitative_diagnostics.json",
+    "public_file": "diagnostics/meridian_quantitative_diagnostics.json",
+    "original_sha256": "529a4777751892c37951b296f89ddb80dcbd5e8835466de9c57650610c9fc23b",
+    "public_sha256": "139fc7c9a0a5f5d231eaed2fa32107d6c1762ddea2f495d1f0e659cbec66cd41"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day2_Diagnostic_Analyzer/meridian_quantitative_diagnostics.md",
+    "public_file": "diagnostics/meridian_quantitative_diagnostics.md",
+    "original_sha256": "0b71b732c1dd81651384d1b304a320df37c87cafa7edd94666fece22ef2a5463",
+    "public_sha256": "9cc85c866c6e167a59afe8c7353368e979a921ecbedde2fd36bdcff5ee07fd53"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day2_Reasoning_Layer/atlas_diagnosis_schema.json",
+    "public_file": "reasoning/atlas_diagnosis_schema.json",
+    "original_sha256": "6cb61696562fbc72ac94fa31649fc5b17ec17ac8447d26d41ad230dac61835a6",
+    "public_sha256": "8942f28bc2e703ae338c5d88d91186170afdb037492324c1ea1238a2ad2b4271"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day2_Reasoning_Layer/atlas_diagnosis_system_prompt.md",
+    "public_file": "reasoning/atlas_diagnosis_system_prompt.md",
+    "original_sha256": "6039e895c8193dddaa4dcc8c546ab43498690dcf426ec73b605f1619e011e330",
+    "public_sha256": "a0664d68c2a2a4279ad8c2f0a201937ae509aafd5e9b6b55a8c0bad6f64518ab"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day2_Reasoning_Layer/meridian_atlas_v0_diagnosis.json",
+    "public_file": "reasoning/meridian_atlas_v0_diagnosis.json",
+    "original_sha256": "081766ad736227034730cbec2e7da283b07f452a6be199dd8334e6af37097e36",
+    "public_sha256": "e452ed29cb841c6ed14b117b7a21de553fcb9e957b09cc5e37672bd444a91dee"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day2_Reasoning_Layer/meridian_atlas_v0_diagnosis.md",
+    "public_file": "reasoning/meridian_atlas_v0_diagnosis.md",
+    "original_sha256": "9237716b6ce6c35eb9ff12691b47731f02580ac412803e02e6050f462a0b4a8a",
+    "public_sha256": "1439a02a69c028caf03baeb3064198e7000612a318577e6e925c7144ec2a423e"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day2_Impact_Sizing/meridian_annualized_impact_sizing.json",
+    "public_file": "impact_sizing/meridian_annualized_impact_sizing.json",
+    "original_sha256": "e3fa8d3d276f56f7beccc001e25a4ee0ecce2b8b4d3f55d03c722a2721fe5b2f",
+    "public_sha256": "e65da060ad159d29e6189b4195b3bbb30ba1f6875659496edc7c13d2b9f8ca4d"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day2_Impact_Sizing/meridian_annualized_impact_sizing.md",
+    "public_file": "impact_sizing/meridian_annualized_impact_sizing.md",
+    "original_sha256": "ab8583767edfacfc701e8b780966d456d4a12d8c42a1f54458a92f84b322466e",
+    "public_sha256": "9edb7bc112cd28f3f4aeac02d1dddf68f6252041c9f1098bfbefa0857318aebd"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day2_Impact_Sizing/meridian_annualized_impact_lenses.csv",
+    "public_file": "impact_sizing/meridian_annualized_impact_lenses.csv",
+    "original_sha256": "e43ee3ff514a8e33b988f4c9f64139b38d7f22cc7c456cdaf88e1dfd854e65b5",
+    "public_sha256": "e43ee3ff514a8e33b988f4c9f64139b38d7f22cc7c456cdaf88e1dfd854e65b5"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/meridian_opportunity_map_final.json",
+    "public_file": "opportunity_mapping/meridian_opportunity_map_final.json",
+    "original_sha256": "4280070600fd07ebf14f321d126b482f6e1454f5193c3e5b3eeac36be12f7755",
+    "public_sha256": "f7bfc134bd9b326a0bc7d1cd63b4d0754da84f7ed8d78ccd81a3e62a590f36d4"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/meridian_opportunity_map_report.md",
+    "public_file": "opportunity_mapping/meridian_opportunity_map_report.md",
+    "original_sha256": "549553db35cd62703c020b4445d647e87b7562a54334c1e18bccc4c16b02f256",
+    "public_sha256": "f8d928da4dff356f27d261ad5576ff9d803cca79ebfdf5c4859cf733876336d3"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/atlas_opportunity_map.schema.json",
+    "public_file": "opportunity_mapping/atlas_opportunity_map.schema.json",
+    "original_sha256": "c065dd402d44b2837dc7850db6d990a33f9396904164463ae49f04d87dbf1659",
+    "public_sha256": "c065dd402d44b2837dc7850db6d990a33f9396904164463ae49f04d87dbf1659"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/atlas_opportunity_mapping_system_prompt.md",
+    "public_file": "opportunity_mapping/atlas_opportunity_mapping_system_prompt.md",
+    "original_sha256": "6303cd6d3af243e67766feb75afe03581a994e4500a75b85ce9606afc12c8d68",
+    "public_sha256": "b252b07d3d61b2581a2d9ef064934ef5157a9be90d9a549baf8156e31ee3a14f"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/taxonomy_and_rules.md",
+    "public_file": "opportunity_mapping/taxonomy_and_rules.md",
+    "original_sha256": "3c08f4afd9278dbc973e9e2ef8ff0f6a85e342aa1ea2faca8d17cf8b31c75f35",
+    "public_sha256": "dce7c7901c8f5bb0bfbbceef72bf27d17e7b98907f42d73e2320089bb838e64d"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evaluation_rubric.md",
+    "public_file": "opportunity_mapping/evaluation_rubric.md",
+    "original_sha256": "991a87ce8fb56b9cbbff342c76b51920c046cccbb26d5375a15dd879e653d165",
+    "public_sha256": "0d92baca68a45e0e203aed4bd343d37d31f54ad3904f2c117e9b65097de97fe8"
+  },
+  {
+    "authoritative_workspace_file": "day4/roi_engine.py",
+    "public_file": "roi_operating_model/roi_engine.py",
+    "original_sha256": "83801104cb6497070d7739b05118744790497210429fe9a7a7807d642d8f9030",
+    "public_sha256": "00350badbe570add662d2161e6c0b6cb04c370265bbf61d4bc4404dcb2bf1b25"
+  },
+  {
+    "authoritative_workspace_file": "day4/workflow_guards.py",
+    "public_file": "roi_operating_model/workflow_guards.py",
+    "original_sha256": "299c655595f28a85be8ce092d567a74038d9cec337cbca8a89cd12f15bacb743",
+    "public_sha256": "83606c5560d03bb3241668e940d041cde3f6ee73892252528805fd3ff858ad77"
+  },
+  {
+    "authoritative_workspace_file": "day4/roi_input.schema.json",
+    "public_file": "roi_operating_model/roi_input.schema.json",
+    "original_sha256": "57949035a6df38060cd25507656b16aa4ce27737b0511a30ad326f1241ec6d78",
+    "public_sha256": "57949035a6df38060cd25507656b16aa4ce27737b0511a30ad326f1241ec6d78"
+  },
+  {
+    "authoritative_workspace_file": "day4/roi_output.schema.json",
+    "public_file": "roi_operating_model/roi_output.schema.json",
+    "original_sha256": "b52110873d14c24f97f6ef1b791e5e7797dbffb9c030e5e44608ecfef633d893",
+    "public_sha256": "b52110873d14c24f97f6ef1b791e5e7797dbffb9c030e5e44608ecfef633d893"
+  },
+  {
+    "authoritative_workspace_file": "day4/meridian_roi_inputs.json",
+    "public_file": "roi_operating_model/meridian_roi_inputs.json",
+    "original_sha256": "b5d88880ee30fec02b765401b8e13acdb93491a238901bb9542f25475bac49f2",
+    "public_sha256": "e3caf81a76ea2940503db0a042a4ff5a3d9b985307dce1b386eb3178a5623b35"
+  },
+  {
+    "authoritative_workspace_file": "day4/meridian_roi_results.json",
+    "public_file": "roi_operating_model/meridian_roi_results.json",
+    "original_sha256": "d637a8c0b3748e0d2363f1abfeac1539c0d3b55b7c401719d4acb47348a57039",
+    "public_sha256": "d637a8c0b3748e0d2363f1abfeac1539c0d3b55b7c401719d4acb47348a57039"
+  },
+  {
+    "authoritative_workspace_file": "day4/future_state_operating_model.json",
+    "public_file": "roi_operating_model/future_state_operating_model.json",
+    "original_sha256": "53ab439171adaf93457f0e34afa3950f89cabcdbc10646faf2e03e229b6dfd5c",
+    "public_sha256": "080fad04a9c6a7a35c866f8246041876990b9124b22f0483565fbf120ceda249"
+  },
+  {
+    "authoritative_workspace_file": "day4/roi_method_and_input_guide.md",
+    "public_file": "roi_operating_model/roi_method_and_input_guide.md",
+    "original_sha256": "ab52258998e36591472fca481e2018181b98601096ccbbb3701f1174dbd39ba0",
+    "public_sha256": "6e7694ebe66a76faf6ec9a9b89fdf4cc61b6b94e772e4c9b0b952d5b70faf383"
+  },
+  {
+    "authoritative_workspace_file": "day4/pilot_charter.md",
+    "public_file": "roi_operating_model/pilot_charter.md",
+    "original_sha256": "d7bcc68929450fe2d5c08347a902d34b072cb8ad72d3776d35eb87168ab21423",
+    "public_sha256": "c1a2a867d73b5ee930f878557a576aeaf397768f9319c898f35afb30a5b1101f"
+  },
+  {
+    "authoritative_workspace_file": "day4/pilot_acceptance_parameters.json",
+    "public_file": "roi_operating_model/pilot_acceptance_parameters.json",
+    "original_sha256": "3bb727a7b089706f1c6147745b110fb063c187c481e8dc7e551a20fa7181248a",
+    "public_sha256": "3bb727a7b089706f1c6147745b110fb063c187c481e8dc7e551a20fa7181248a"
+  },
+  {
+    "authoritative_workspace_file": "day4/pilot_measurement_record.template.json",
+    "public_file": "roi_operating_model/pilot_measurement_record.template.json",
+    "original_sha256": "97f392252e88aad00d1615071386bd73dd0eeaeca301da6522e74a3b41cdf45c",
+    "public_sha256": "97f392252e88aad00d1615071386bd73dd0eeaeca301da6522e74a3b41cdf45c"
+  },
+  {
+    "authoritative_workspace_file": "day5/workbench.py",
+    "public_file": "workbench/workbench.py",
+    "original_sha256": "9f07cf964b2874d72a65a4e93886524024bcc0d3661861f9f5d20a74f3ee5eff",
+    "public_sha256": "5cb0f34796f86a6a1aeec9b05740f48c4f1884187534008f284724b3f760234f"
+  },
+  {
+    "authoritative_workspace_file": "day5/measurements.py",
+    "public_file": "workbench/measurements.py",
+    "original_sha256": "c8215e0bf6ecfe54e43662959e991ee3bda515551bf6d09d2d4045610b455a4b",
+    "public_sha256": "c65b71050e83bf6bb62a0a98209c2df832a3017ee3e8cb3f31d5df72b20905ce"
+  },
+  {
+    "authoritative_workspace_file": "day6/model_runner.py",
+    "public_file": "model_integration/model_runner.py",
+    "original_sha256": "6424c52d7007c05d338c64af111e655e010b863b3eb4b7e0a0c6e63b4ceec6c8",
+    "public_sha256": "2e1ee13301f5894410daa3ad1d9c4ab63f2e99a68d3be7d28c52645f646a6c07"
+  },
+  {
+    "authoritative_workspace_file": "day6/evaluate_run.py",
+    "public_file": "model_integration/evaluate_run.py",
+    "original_sha256": "9a7c61f4ff80ee9accd165c55a2ed0e09949c5cdeee42e6866f781a81f7ec730",
+    "public_sha256": "cba06eb2b960c33ad6bbd425a9f648ade7d5a2f93751fb4edd155cc217c332f1"
+  },
+  {
+    "authoritative_workspace_file": "day6/summarize_benchmark.py",
+    "public_file": "model_integration/summarize_benchmark.py",
+    "original_sha256": "7d55b7d8f5dd666e7d293e9d9459d4191b5df458fe500589533c9942b822c946",
+    "public_sha256": "fed977004383ca46a75ac5e4fb7a518f33dc20cc2c6bef527dbf31c2cacc6418"
+  },
+  {
+    "authoritative_workspace_file": "day6/generation_prompt.md",
+    "public_file": "model_integration/generation_prompt.md",
+    "original_sha256": "a5e88355f6c9b12d90d46a72f26784e3f8a96f347b79fa73cdb202ba1835940d",
+    "public_sha256": "7954e5f6100fb0ed82367fcb7cd1e5d65e1a264d00a2bdfb8605493a8f52fa2a"
+  },
+  {
+    "authoritative_workspace_file": "day6/draft.schema.json",
+    "public_file": "model_integration/draft.schema.json",
+    "original_sha256": "42beaa937d8b5325739b97fd8d3768534c8a7af9f96cfcc0c030322ef0eaf8d5",
+    "public_sha256": "42beaa937d8b5325739b97fd8d3768534c8a7af9f96cfcc0c030322ef0eaf8d5"
+  },
+  {
+    "authoritative_workspace_file": "day6/runner_config.json",
+    "public_file": "model_integration/runner_config.json",
+    "original_sha256": "fcf2ab6058b3425f90a5fd34d25fcfaaaa8856b94c1618d3eeaf5a64e7556f46",
+    "public_sha256": "fcf2ab6058b3425f90a5fd34d25fcfaaaa8856b94c1618d3eeaf5a64e7556f46"
+  },
+  {
+    "authoritative_workspace_file": "day4/test_day4.py",
+    "public_file": "tests/test_roi.py",
+    "original_sha256": "d790f45581479c096215231ad709a4cddebf12cc8b20cb5a4fdf6e7b7899c6a0",
+    "public_sha256": "19ad44b8d4c6b3f13d8cdd647d1101debfadd210011dc9d65751e1fd6a95081b"
+  },
+  {
+    "authoritative_workspace_file": "day5/test_workbench.py",
+    "public_file": "tests/test_workbench.py",
+    "original_sha256": "236f1aca9601d2793f4bb41dd4c64bff0825cec1caa2d8dde46a4c80660e2378",
+    "public_sha256": "1cfa2437e6f17d1d5b6504fe32ff6a433cad81a430aa1388d58520fa629db12d"
+  },
+  {
+    "authoritative_workspace_file": "day6/test_day6.py",
+    "public_file": "tests/test_integration.py",
+    "original_sha256": "59bbf6108aba7b67a1ca66c5c209d177b4a93d58b21ae67b147623727f110bae",
+    "public_sha256": "71fe3661f472a5b35aee2b8ace5bd1da74b1e065e0d1a775db7bf9032d2e21eb"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day2_Reasoning_Layer/build_diagnosis_context.py",
+    "public_file": "reasoning/build_diagnosis_context.py",
+    "original_sha256": "94a0e02cbb4e005300d5de47627a77a82825e5819dccc99fad4097bc8454f4af",
+    "public_sha256": "94a0e02cbb4e005300d5de47627a77a82825e5819dccc99fad4097bc8454f4af"
+  },
+  {
+    "authoritative_workspace_file": "day3_final/evidence/ATLAS_Day1_Meridian_Source_Pack/README.md",
+    "public_file": "source_pack/README.md",
+    "original_sha256": "2fc12917bca87d5814deb59d4a1361c0067ac077f623708fa3d8344452f4581a",
+    "public_sha256": "1f271126edd4c7fe19299900afec26100d989a4b053cd14e00cd520c02e3c393"
+  }
+]

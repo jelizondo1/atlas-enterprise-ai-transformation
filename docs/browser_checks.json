@@ -1,0 +1,30 @@
+{
+  "checks": [
+    {
+      "check": "Rendered 0018 with real source and unavailable model state",
+      "pass": true
+    },
+    {
+      "check": "Rendered 0139 with real source and unavailable model state",
+      "pass": true
+    },
+    {
+      "check": "Rendered 0184 with real source and unavailable model state",
+      "pass": true
+    },
+    {
+      "check": "Evidence tab displays numbered source lines",
+      "pass": true
+    },
+    {
+      "check": "Blank reviewer submission rejected",
+      "pass": true
+    },
+    {
+      "check": "Cited session assessment accepted without clearing Solara hold or granting approval",
+      "pass": true
+    }
+  ],
+  "passed": true,
+  "screenshots": "Actual local Streamlit UI; no simulated model results"
+}
