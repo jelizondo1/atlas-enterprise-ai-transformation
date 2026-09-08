@@ -1,0 +1,11 @@
+{
+  "case_id": "MRG-2026-0184",
+  "status": "AWAITING_LIVE_DRAFT_AND_INDEPENDENT_REVIEW",
+  "run_id": null,
+  "draft_sha256": null,
+  "reviewer": null,
+  "independently_frozen_criteria_ref": null,
+  "structural_status": "NOT_RUN",
+  "semantic_status": "NOT_REVIEWED",
+  "instruction": "After an admitted live output, use the runner-generated hash-bound template and public protocol. Do not score this preparation record."
+}
