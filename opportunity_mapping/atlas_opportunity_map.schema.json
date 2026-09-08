@@ -1,0 +1,521 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "project",
+    "case",
+    "status",
+    "principle",
+    "evidence_limitations",
+    "sources",
+    "diagnoses",
+    "baseline",
+    "opportunities",
+    "burden_lenses"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "project": {
+      "type": "string"
+    },
+    "case": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "principle": {
+      "type": "string"
+    },
+    "evidence_limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "file",
+          "json_pointer",
+          "heading",
+          "description",
+          "sha256"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "file": {
+            "type": "string"
+          },
+          "json_pointer": {
+            "type": "string"
+          },
+          "heading": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "diagnoses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "finding",
+          "evidence_type",
+          "source_refs",
+          "provenance_note"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "finding": {
+            "type": "string"
+          },
+          "evidence_type": {
+            "type": "string"
+          },
+          "source_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "provenance_note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "baseline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "annual_handling_hours_precise",
+        "annual_handling_hours_day2_reported",
+        "annual_cases",
+        "annual_cases_status",
+        "sample_cases",
+        "handling_minutes_precise",
+        "fte_precise",
+        "fte_day2_reported",
+        "productive_hours_per_fte",
+        "team_fte",
+        "fully_loaded_cost_per_fte_usd",
+        "annual_team_cost_usd",
+        "cost_per_productive_hour_usd",
+        "sla_attainment",
+        "reopen_rate",
+        "missing_evidence_sla",
+        "evidence_available_sla",
+        "missing_evidence_resolution_gap_days",
+        "source_refs",
+        "interpretation"
+      ],
+      "properties": {
+        "annual_handling_hours_precise": {
+          "type": "number"
+        },
+        "annual_handling_hours_day2_reported": {
+          "type": "number"
+        },
+        "annual_cases": {
+          "type": "number"
+        },
+        "annual_cases_status": {
+          "type": "string"
+        },
+        "sample_cases": {
+          "type": "number"
+        },
+        "handling_minutes_precise": {
+          "type": "number"
+        },
+        "fte_precise": {
+          "type": "number"
+        },
+        "fte_day2_reported": {
+          "type": "number"
+        },
+        "productive_hours_per_fte": {
+          "type": "number"
+        },
+        "team_fte": {
+          "type": "number"
+        },
+        "fully_loaded_cost_per_fte_usd": {
+          "type": "number"
+        },
+        "annual_team_cost_usd": {
+          "type": "number"
+        },
+        "cost_per_productive_hour_usd": {
+          "type": "number"
+        },
+        "sla_attainment": {
+          "type": "number"
+        },
+        "reopen_rate": {
+          "type": "number"
+        },
+        "missing_evidence_sla": {
+          "type": "number"
+        },
+        "evidence_available_sla": {
+          "type": "number"
+        },
+        "missing_evidence_resolution_gap_days": {
+          "type": "number"
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "interpretation": {
+          "type": "string"
+        }
+      }
+    },
+    "opportunities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "diagnosis_refs",
+          "source_refs",
+          "recommendation_evidence_type",
+          "primary_type",
+          "components",
+          "proposed_intervention",
+          "classification_reason",
+          "prohibited_action",
+          "accountable_owner",
+          "affected_cohort",
+          "impact",
+          "delivery_stage",
+          "next_step",
+          "controls",
+          "priority"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "diagnosis_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "source_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "recommendation_evidence_type": {
+            "type": "string",
+            "enum": [
+              "DIRECT",
+              "DERIVED",
+              "INFERRED"
+            ]
+          },
+          "primary_type": {
+            "type": "string",
+            "enum": [
+              "LLM",
+              "DETERMINISTIC_LOGIC",
+              "WORKFLOW_AUTOMATION",
+              "HUMAN_JUDGMENT",
+              "PROCESS_POLICY_CHANGE",
+              "HYBRID"
+            ]
+          },
+          "components": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "LLM",
+                "DETERMINISTIC_LOGIC",
+                "WORKFLOW_AUTOMATION",
+                "HUMAN_JUDGMENT",
+                "PROCESS_POLICY_CHANGE",
+                "HYBRID"
+              ]
+            },
+            "minItems": 1
+          },
+          "proposed_intervention": {
+            "type": "string"
+          },
+          "classification_reason": {
+            "type": "string"
+          },
+          "prohibited_action": {
+            "type": "string"
+          },
+          "accountable_owner": {
+            "type": "string"
+          },
+          "affected_cohort": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "annual_cases",
+              "scope",
+              "source_refs"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "annual_cases": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "scope": {
+                "type": "string"
+              },
+              "source_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "impact": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "status",
+              "annual_savings_hours",
+              "annual_savings_currency",
+              "overlap_group",
+              "formula",
+              "missing_inputs",
+              "measurement",
+              "associated_burden_hours",
+              "burden_source_refs",
+              "cost_assumptions_available"
+            ],
+            "properties": {
+              "status": {
+                "type": "string"
+              },
+              "annual_savings_hours": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "annual_savings_currency": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "overlap_group": {
+                "type": "string"
+              },
+              "formula": {
+                "type": "string"
+              },
+              "missing_inputs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "measurement": {
+                "type": "string"
+              },
+              "associated_burden_hours": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "burden_source_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "cost_assumptions_available": {
+                "type": "string"
+              }
+            }
+          },
+          "delivery_stage": {
+            "type": "string"
+          },
+          "next_step": {
+            "type": "string"
+          },
+          "controls": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "calculation_executor",
+              "approval_routing_executor",
+              "approval_decision_owner",
+              "ambiguous_or_high_risk_action",
+              "llm_can_execute_financial_action",
+              "external_action_gate",
+              "audit_requirements",
+              "policy_effective_date_check",
+              "human_can_override_to_escalate",
+              "specialist_review_overrides_amount_threshold"
+            ],
+            "properties": {
+              "calculation_executor": {
+                "type": "string",
+                "const": "DETERMINISTIC_SERVICE"
+              },
+              "approval_routing_executor": {
+                "type": "string",
+                "const": "VERSIONED_RULE_ENGINE"
+              },
+              "approval_decision_owner": {
+                "type": "string",
+                "const": "AUTHORIZED_HUMAN"
+              },
+              "ambiguous_or_high_risk_action": {
+                "type": "string",
+                "const": "HOLD_AND_ESCALATE"
+              },
+              "llm_can_execute_financial_action": {
+                "type": "boolean",
+                "const": false
+              },
+              "external_action_gate": {
+                "type": "string"
+              },
+              "audit_requirements": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "policy_effective_date_check": {
+                "type": "boolean",
+                "const": true
+              },
+              "human_can_override_to_escalate": {
+                "type": "boolean",
+                "const": true
+              },
+              "specialist_review_overrides_amount_threshold": {
+                "type": "boolean",
+                "const": true
+              }
+            }
+          },
+          "priority": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "tier",
+              "rationale"
+            ],
+            "properties": {
+              "tier": {
+                "type": "string"
+              },
+              "rationale": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "burden_lenses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "lens",
+          "sample_cases",
+          "annualized_cases",
+          "mean_minutes",
+          "comparator_minutes",
+          "gap_minutes",
+          "associated_hours_unrounded",
+          "associated_hours_rounded",
+          "source_reported_hours",
+          "pass"
+        ],
+        "properties": {
+          "lens": {
+            "type": "string"
+          },
+          "sample_cases": {
+            "type": "number"
+          },
+          "annualized_cases": {
+            "type": "number"
+          },
+          "mean_minutes": {
+            "type": "number"
+          },
+          "comparator_minutes": {
+            "type": "number"
+          },
+          "gap_minutes": {
+            "type": "number"
+          },
+          "associated_hours_unrounded": {
+            "type": "number"
+          },
+          "associated_hours_rounded": {
+            "type": "number"
+          },
+          "source_reported_hours": {
+            "type": "number"
+          },
+          "pass": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Atlas final opportunity map 1.0.0"
+}

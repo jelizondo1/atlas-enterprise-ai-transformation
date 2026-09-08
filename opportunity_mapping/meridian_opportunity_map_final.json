@@ -1,0 +1,1228 @@
+{
+  "schema_version": "1.0.0",
+  "project": "Atlas",
+  "case": "Meridian Retail Group AP disputes",
+  "status": "FILE_GROUNDED_FINAL_DESIGN",
+  "principle": "Use AI where ambiguity exists, deterministic systems where truth can be calculated, and humans where judgment, risk and accountability require them.",
+  "evidence_limitations": [
+    "Authoritative supplied files describe a synthetic 250-case sample; annualization is an assumption, not observed annual operations.",
+    "All seven diagnosis findings F1-F7, conflict C1 and process step P5 are covered. Recommendations remain INFERRED.",
+    "Source-derived baseline 71952 hours differs from rounded source-backed headline 72000; both are retained explicitly.",
+    "Known source ambiguities: exact $50000 approval boundary and case MRG-2026-0139 disputed-component reconciliation remain open.",
+    "source-backed evaluation artifacts are isolated assessment material, not mapping evidence or a new source-backed model benchmark.",
+    "No causal savings, deployment approval or operational execution is established."
+  ],
+  "sources": [
+    {
+      "id": "DIAG",
+      "file": "reasoning/meridian_atlas_v0_diagnosis.json",
+      "json_pointer": "",
+      "heading": "",
+      "description": "Authoritative completed source-backed diagnosis",
+      "sha256": "e452ed29cb841c6ed14b117b7a21de553fcb9e957b09cc5e37672bd444a91dee"
+    },
+    {
+      "id": "IMPACT",
+      "file": "impact_sizing/meridian_annualized_impact_sizing.json",
+      "json_pointer": "",
+      "heading": "",
+      "description": "Authoritative annualization assumptions and burden lenses",
+      "sha256": "e65da060ad159d29e6189b4195b3bbb30ba1f6875659496edc7c13d2b9f8ca4d"
+    },
+    {
+      "id": "QUANT",
+      "file": "diagnostics/meridian_quantitative_diagnostics.json",
+      "json_pointer": "",
+      "heading": "",
+      "description": "Authoritative unrounded quantitative output",
+      "sha256": "139fc7c9a0a5f5d231eaed2fa32107d6c1762ddea2f495d1f0e659cbec66cd41"
+    },
+    {
+      "id": "CSV",
+      "file": "source_pack/meridian_disputes_250.csv",
+      "json_pointer": "",
+      "heading": "",
+      "description": "Client-facing 250-case input; no hidden root-cause labels",
+      "sha256": "90ab2a5b3146990dbc81079604106a4f3a77baf27185f92b3b6a367f099b8929"
+    },
+    {
+      "id": "F1",
+      "file": "reasoning/meridian_atlas_v0_diagnosis.json",
+      "json_pointer": "/diagnostic_findings/0",
+      "heading": "",
+      "description": "Evidence fragmentation is a central operating constraint: analysts are expected to assemble case facts from multiple systems and repositories before deciding a dispute.",
+      "sha256": "e452ed29cb841c6ed14b117b7a21de553fcb9e957b09cc5e37672bd444a91dee"
+    },
+    {
+      "id": "F2",
+      "file": "reasoning/meridian_atlas_v0_diagnosis.json",
+      "json_pointer": "/diagnostic_findings/1",
+      "heading": "",
+      "description": "Missing evidence is associated with a major deterioration in SLA performance.",
+      "sha256": "e452ed29cb841c6ed14b117b7a21de553fcb9e957b09cc5e37672bd444a91dee"
+    },
+    {
+      "id": "F3",
+      "file": "reasoning/meridian_atlas_v0_diagnosis.json",
+      "json_pointer": "/diagnostic_findings/2",
+      "heading": "",
+      "description": "Supplier-specific terms create decision complexity that cannot be safely resolved using generic policy alone.",
+      "sha256": "e452ed29cb841c6ed14b117b7a21de553fcb9e957b09cc5e37672bd444a91dee"
+    },
+    {
+      "id": "F4",
+      "file": "reasoning/meridian_atlas_v0_diagnosis.json",
+      "json_pointer": "/diagnostic_findings/3",
+      "heading": "",
+      "description": "Historical treatment is an unreliable substitute for current authoritative evidence.",
+      "sha256": "e452ed29cb841c6ed14b117b7a21de553fcb9e957b09cc5e37672bd444a91dee"
+    },
+    {
+      "id": "F5",
+      "file": "reasoning/meridian_atlas_v0_diagnosis.json",
+      "json_pointer": "/diagnostic_findings/4",
+      "heading": "",
+      "description": "Reopened disputes represent substantial rework rather than a minor administrative event.",
+      "sha256": "e452ed29cb841c6ed14b117b7a21de553fcb9e957b09cc5e37672bd444a91dee"
+    },
+    {
+      "id": "F6",
+      "file": "reasoning/meridian_atlas_v0_diagnosis.json",
+      "json_pointer": "/diagnostic_findings/5",
+      "heading": "",
+      "description": "Some disputes are composite cases that require component-level treatment rather than a single invoice-level binary decision.",
+      "sha256": "e452ed29cb841c6ed14b117b7a21de553fcb9e957b09cc5e37672bd444a91dee"
+    },
+    {
+      "id": "F7",
+      "file": "reasoning/meridian_atlas_v0_diagnosis.json",
+      "json_pointer": "/diagnostic_findings/6",
+      "heading": "",
+      "description": "The current operating model relies heavily on analysts to recognize when ambiguity requires specialist authority rather than individual interpretation.",
+      "sha256": "e452ed29cb841c6ed14b117b7a21de553fcb9e957b09cc5e37672bd444a91dee"
+    },
+    {
+      "id": "C1",
+      "file": "reasoning/meridian_atlas_v0_diagnosis.json",
+      "json_pointer": "/source_conflicts/0",
+      "heading": "",
+      "description": "Solara unresolved 2026 freight authority",
+      "sha256": "e452ed29cb841c6ed14b117b7a21de553fcb9e957b09cc5e37672bd444a91dee"
+    },
+    {
+      "id": "P5",
+      "file": "reasoning/meridian_atlas_v0_diagnosis.json",
+      "json_pointer": "/process_steps/4",
+      "heading": "",
+      "description": "Resolution and approval controls",
+      "sha256": "e452ed29cb841c6ed14b117b7a21de553fcb9e957b09cc5e37672bd444a91dee"
+    },
+    {
+      "id": "L1",
+      "file": "impact_sizing/meridian_annualized_impact_sizing.json",
+      "json_pointer": "/diagnostic_lenses/0",
+      "heading": "",
+      "description": "Reopened cases",
+      "sha256": "e65da060ad159d29e6189b4195b3bbb30ba1f6875659496edc7c13d2b9f8ca4d"
+    },
+    {
+      "id": "L2",
+      "file": "impact_sizing/meridian_annualized_impact_sizing.json",
+      "json_pointer": "/diagnostic_lenses/1",
+      "heading": "",
+      "description": "Missing evidence",
+      "sha256": "e65da060ad159d29e6189b4195b3bbb30ba1f6875659496edc7c13d2b9f8ca4d"
+    },
+    {
+      "id": "L3",
+      "file": "impact_sizing/meridian_annualized_impact_sizing.json",
+      "json_pointer": "/diagnostic_lenses/2",
+      "heading": "",
+      "description": "4+ systems accessed",
+      "sha256": "e65da060ad159d29e6189b4195b3bbb30ba1f6875659496edc7c13d2b9f8ca4d"
+    },
+    {
+      "id": "L4",
+      "file": "impact_sizing/meridian_annualized_impact_sizing.json",
+      "json_pointer": "/diagnostic_lenses/3",
+      "heading": "",
+      "description": "Escalated cases",
+      "sha256": "e65da060ad159d29e6189b4195b3bbb30ba1f6875659496edc7c13d2b9f8ca4d"
+    },
+    {
+      "id": "ASSUMPTIONS",
+      "file": "impact_sizing/meridian_annualized_impact_sizing.json",
+      "json_pointer": "/assumptions",
+      "heading": "",
+      "description": "Declared annualization and cost assumptions",
+      "sha256": "e65da060ad159d29e6189b4195b3bbb30ba1f6875659496edc7c13d2b9f8ca4d"
+    },
+    {
+      "id": "DOC:01_AP_Dispute_Resolution_SOP.md",
+      "file": "source_pack/01_AP_Dispute_Resolution_SOP.md",
+      "json_pointer": "",
+      "heading": "",
+      "description": "Original client document",
+      "sha256": "82b014643273cdc9f76aacc3440164d73e8e4ff09f0c06e2dbf393cbf2b01b94"
+    },
+    {
+      "id": "DOC:02_Vendor_Commercial_Terms_Policy.md",
+      "file": "source_pack/02_Vendor_Commercial_Terms_Policy.md",
+      "json_pointer": "",
+      "heading": "",
+      "description": "Original client document",
+      "sha256": "b9f2e4d0f5414c5b3b18a1a9da35bc739bbfa590942440c4e59bd2f6f0b39657"
+    },
+    {
+      "id": "DOC:03_NorthStar_Agreements.md",
+      "file": "source_pack/03_NorthStar_Agreements.md",
+      "json_pointer": "",
+      "heading": "",
+      "description": "Original client document",
+      "sha256": "b708e85ba0a40c52912ededf5b67f0c98c00d8a26b7073c536ddd9c0639905ac"
+    },
+    {
+      "id": "DOC:04_Apex_Agreement.md",
+      "file": "source_pack/04_Apex_Agreement.md",
+      "json_pointer": "",
+      "heading": "",
+      "description": "Original client document",
+      "sha256": "516218f922534f3dfda2dff1a2e4db07e8510c8798851707a2a186506c2d6405"
+    },
+    {
+      "id": "DOC:05_Solara_Agreements_and_Email.md",
+      "file": "source_pack/05_Solara_Agreements_and_Email.md",
+      "json_pointer": "",
+      "heading": "",
+      "description": "Original client document",
+      "sha256": "12dc1d45cd2f6f0a025a40ee6e2cf396b101142ebc633a97ac9de879637cb960"
+    },
+    {
+      "id": "DOC:README.md",
+      "file": "source_pack/README.md",
+      "json_pointer": "",
+      "heading": "",
+      "description": "Sanitized source overview; original dataset baseline retained verbatim",
+      "sha256": "1f271126edd4c7fe19299900afec26100d989a4b053cd14e00cd520c02e3c393"
+    },
+    {
+      "id": "CASE:MRG-2026-0003",
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0003.md",
+      "json_pointer": "",
+      "heading": "",
+      "description": "Original client case evidence packet",
+      "sha256": "f63667e5a210e76d329636953772ff45feae1cb6c706e0ac7d9dc884ad89ede1"
+    },
+    {
+      "id": "CASE:MRG-2026-0018",
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0018.md",
+      "json_pointer": "",
+      "heading": "",
+      "description": "Original client case evidence packet",
+      "sha256": "e7b7567b1ae79e863def0f50a1503289d10e357c1fd0fb752d8fde3d135e8179"
+    },
+    {
+      "id": "CASE:MRG-2026-0022",
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0022.md",
+      "json_pointer": "",
+      "heading": "",
+      "description": "Original client case evidence packet",
+      "sha256": "0651ca16804e416e99821bda54312ef612edad7268b6477272de42534b9b82b0"
+    },
+    {
+      "id": "CASE:MRG-2026-0026",
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0026.md",
+      "json_pointer": "",
+      "heading": "",
+      "description": "Original client case evidence packet",
+      "sha256": "44c5dceae2bb7e17191712a7c7134755941e370feb5eff853f488ca0b71131c0"
+    },
+    {
+      "id": "CASE:MRG-2026-0139",
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0139.md",
+      "json_pointer": "",
+      "heading": "",
+      "description": "Original client case evidence packet",
+      "sha256": "bca0499c5913118e536742ac7971426fc3b22917655eb9388a2ea1a7b36feec0"
+    },
+    {
+      "id": "CASE:MRG-2026-0143",
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0143.md",
+      "json_pointer": "",
+      "heading": "",
+      "description": "Original client case evidence packet",
+      "sha256": "3d59780742af1c4aa57145399be9bf94ac0122c3fd529d639107225b4deedb40"
+    },
+    {
+      "id": "CASE:MRG-2026-0147",
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0147.md",
+      "json_pointer": "",
+      "heading": "",
+      "description": "Original client case evidence packet",
+      "sha256": "fa83a06885a881097f5f80d9db244665ed12077e0a9712c88e068901f54b917e"
+    },
+    {
+      "id": "CASE:MRG-2026-0159",
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0159.md",
+      "json_pointer": "",
+      "heading": "",
+      "description": "Original client case evidence packet",
+      "sha256": "bd8cb8cdc13e4244bf64644b6d4949faaa1b3f9326bce5655cd11c73f0f508f7"
+    },
+    {
+      "id": "CASE:MRG-2026-0168",
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0168.md",
+      "json_pointer": "",
+      "heading": "",
+      "description": "Original client case evidence packet",
+      "sha256": "c52df47c3e55482181d222620b0aca1ab302c61929b45629370f46597ede368d"
+    },
+    {
+      "id": "CASE:MRG-2026-0184",
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0184.md",
+      "json_pointer": "",
+      "heading": "",
+      "description": "Original client case evidence packet",
+      "sha256": "8c2e59413bd3b966e9e2e0261ad87d7a4f954de97303ac8788e38703a8c40a3c"
+    },
+    {
+      "id": "CASE:MRG-2026-0213",
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0213.md",
+      "json_pointer": "",
+      "heading": "",
+      "description": "Original client case evidence packet",
+      "sha256": "96a0e446cf2e5c08b8941cf9e24713d54fc49f1ce93ae142cb0b993242e17180"
+    },
+    {
+      "id": "CASE:MRG-2026-0215",
+      "file": "source_pack/06_Unstructured_Case_Evidence/MRG-2026-0215.md",
+      "json_pointer": "",
+      "heading": "",
+      "description": "Original client case evidence packet",
+      "sha256": "003b1142480c7709de3a783cc3743c344d13e3fe8b89d15f7e0a3e751b5eacc4"
+    },
+    {
+      "id": "QUANT:overall",
+      "file": "diagnostics/meridian_quantitative_diagnostics.json",
+      "json_pointer": "/overall",
+      "heading": "",
+      "description": "Original quantitative section",
+      "sha256": "139fc7c9a0a5f5d231eaed2fa32107d6c1762ddea2f495d1f0e659cbec66cd41"
+    },
+    {
+      "id": "QUANT:by_system_reason_code",
+      "file": "diagnostics/meridian_quantitative_diagnostics.json",
+      "json_pointer": "/by_system_reason_code",
+      "heading": "",
+      "description": "Original quantitative section",
+      "sha256": "139fc7c9a0a5f5d231eaed2fa32107d6c1762ddea2f495d1f0e659cbec66cd41"
+    },
+    {
+      "id": "QUANT:by_supplier",
+      "file": "diagnostics/meridian_quantitative_diagnostics.json",
+      "json_pointer": "/by_supplier",
+      "heading": "",
+      "description": "Original quantitative section",
+      "sha256": "139fc7c9a0a5f5d231eaed2fa32107d6c1762ddea2f495d1f0e659cbec66cd41"
+    },
+    {
+      "id": "QUANT:by_analyst",
+      "file": "diagnostics/meridian_quantitative_diagnostics.json",
+      "json_pointer": "/by_analyst",
+      "heading": "",
+      "description": "Original quantitative section",
+      "sha256": "139fc7c9a0a5f5d231eaed2fa32107d6c1762ddea2f495d1f0e659cbec66cd41"
+    },
+    {
+      "id": "QUANT:by_resolution",
+      "file": "diagnostics/meridian_quantitative_diagnostics.json",
+      "json_pointer": "/by_resolution",
+      "heading": "",
+      "description": "Original quantitative section",
+      "sha256": "139fc7c9a0a5f5d231eaed2fa32107d6c1762ddea2f495d1f0e659cbec66cd41"
+    },
+    {
+      "id": "QUANT:missing_evidence_impact",
+      "file": "diagnostics/meridian_quantitative_diagnostics.json",
+      "json_pointer": "/missing_evidence_impact",
+      "heading": "",
+      "description": "Original quantitative section",
+      "sha256": "139fc7c9a0a5f5d231eaed2fa32107d6c1762ddea2f495d1f0e659cbec66cd41"
+    },
+    {
+      "id": "QUANT:reopened_case_profile",
+      "file": "diagnostics/meridian_quantitative_diagnostics.json",
+      "json_pointer": "/reopened_case_profile",
+      "heading": "",
+      "description": "Original quantitative section",
+      "sha256": "139fc7c9a0a5f5d231eaed2fa32107d6c1762ddea2f495d1f0e659cbec66cd41"
+    },
+    {
+      "id": "QUANT:priority_supplier_profile",
+      "file": "diagnostics/meridian_quantitative_diagnostics.json",
+      "json_pointer": "/priority_supplier_profile",
+      "heading": "",
+      "description": "Original quantitative section",
+      "sha256": "139fc7c9a0a5f5d231eaed2fa32107d6c1762ddea2f495d1f0e659cbec66cd41"
+    },
+    {
+      "id": "QUANT:system_complexity_bands",
+      "file": "diagnostics/meridian_quantitative_diagnostics.json",
+      "json_pointer": "/system_complexity_bands",
+      "heading": "",
+      "description": "Original quantitative section",
+      "sha256": "139fc7c9a0a5f5d231eaed2fa32107d6c1762ddea2f495d1f0e659cbec66cd41"
+    },
+    {
+      "id": "QUANT:correlations",
+      "file": "diagnostics/meridian_quantitative_diagnostics.json",
+      "json_pointer": "/correlations",
+      "heading": "",
+      "description": "Original quantitative section",
+      "sha256": "139fc7c9a0a5f5d231eaed2fa32107d6c1762ddea2f495d1f0e659cbec66cd41"
+    },
+    {
+      "id": "QUANT:concentration",
+      "file": "diagnostics/meridian_quantitative_diagnostics.json",
+      "json_pointer": "/concentration",
+      "heading": "",
+      "description": "Original quantitative section",
+      "sha256": "139fc7c9a0a5f5d231eaed2fa32107d6c1762ddea2f495d1f0e659cbec66cd41"
+    }
+  ],
+  "diagnoses": [
+    {
+      "id": "F1",
+      "finding": "Evidence fragmentation is a central operating constraint: analysts are expected to assemble case facts from multiple systems and repositories before deciding a dispute.",
+      "evidence_type": "DIRECT",
+      "source_refs": [
+        "F1",
+        "DOC:01_AP_Dispute_Resolution_SOP.md",
+        "DOC:03_NorthStar_Agreements.md",
+        "DOC:04_Apex_Agreement.md",
+        "DOC:05_Solara_Agreements_and_Email.md"
+      ],
+      "provenance_note": "Original source-backed finding ID and evidence type preserved."
+    },
+    {
+      "id": "F2",
+      "finding": "Missing evidence is associated with a major deterioration in SLA performance.",
+      "evidence_type": "DERIVED",
+      "source_refs": [
+        "F2",
+        "QUANT:missing_evidence_impact"
+      ],
+      "provenance_note": "Original source-backed finding ID and evidence type preserved."
+    },
+    {
+      "id": "F3",
+      "finding": "Supplier-specific terms create decision complexity that cannot be safely resolved using generic policy alone.",
+      "evidence_type": "DIRECT",
+      "source_refs": [
+        "F3",
+        "DOC:03_NorthStar_Agreements.md",
+        "DOC:04_Apex_Agreement.md",
+        "DOC:05_Solara_Agreements_and_Email.md"
+      ],
+      "provenance_note": "Original source-backed finding ID and evidence type preserved."
+    },
+    {
+      "id": "F4",
+      "finding": "Historical treatment is an unreliable substitute for current authoritative evidence.",
+      "evidence_type": "DIRECT",
+      "source_refs": [
+        "F4",
+        "DOC:02_Vendor_Commercial_Terms_Policy.md",
+        "CASE:MRG-2026-0018"
+      ],
+      "provenance_note": "Original source-backed finding ID and evidence type preserved."
+    },
+    {
+      "id": "F5",
+      "finding": "Reopened disputes represent substantial rework rather than a minor administrative event.",
+      "evidence_type": "DERIVED",
+      "source_refs": [
+        "F5",
+        "QUANT:reopened_case_profile"
+      ],
+      "provenance_note": "Original source-backed finding ID and evidence type preserved."
+    },
+    {
+      "id": "F6",
+      "finding": "Some disputes are composite cases that require component-level treatment rather than a single invoice-level binary decision.",
+      "evidence_type": "DIRECT",
+      "source_refs": [
+        "F6",
+        "DOC:04_Apex_Agreement.md",
+        "CASE:MRG-2026-0139"
+      ],
+      "provenance_note": "Original source-backed finding ID and evidence type preserved."
+    },
+    {
+      "id": "F7",
+      "finding": "The current operating model relies heavily on analysts to recognize when ambiguity requires specialist authority rather than individual interpretation.",
+      "evidence_type": "DIRECT",
+      "source_refs": [
+        "F7",
+        "DOC:01_AP_Dispute_Resolution_SOP.md",
+        "DOC:02_Vendor_Commercial_Terms_Policy.md",
+        "CASE:MRG-2026-0184",
+        "CASE:MRG-2026-0147"
+      ],
+      "provenance_note": "Original source-backed finding ID and evidence type preserved."
+    },
+    {
+      "id": "C1",
+      "finding": "Solara's executed freight amendments expire at December 31, 2025, while a Procurement email states that the existing setup should continue into 2026 and an unsigned draft proposes formal 2026 terms.",
+      "evidence_type": "DIRECT",
+      "source_refs": [
+        "C1",
+        "DOC:05_Solara_Agreements_and_Email.md"
+      ],
+      "provenance_note": "Original unresolved conflict; Procurement / Legal confirmation required."
+    },
+    {
+      "id": "P5",
+      "finding": "Resolution and approval require original disputed amount and required specialist input.",
+      "evidence_type": "DIRECT",
+      "source_refs": [
+        "P5",
+        "DOC:01_AP_Dispute_Resolution_SOP.md",
+        "DOC:02_Vendor_Commercial_Terms_Policy.md",
+        "DOC:03_NorthStar_Agreements.md",
+        "DOC:04_Apex_Agreement.md"
+      ],
+      "provenance_note": "Original process control, not a newly invented diagnostic finding."
+    }
+  ],
+  "baseline": {
+    "annual_handling_hours_precise": 71952.0,
+    "annual_handling_hours_day2_reported": 72000,
+    "annual_cases": 180000,
+    "annual_cases_status": "Declared sizing assumption; CSV cohort annualization uses 180000/250 = 720",
+    "sample_cases": 250,
+    "handling_minutes_precise": 23.984,
+    "fte_precise": 42.324705882352944,
+    "fte_day2_reported": 42.4,
+    "productive_hours_per_fte": 1700,
+    "team_fte": 52,
+    "fully_loaded_cost_per_fte_usd": 85000,
+    "annual_team_cost_usd": 4420000,
+    "cost_per_productive_hour_usd": 50,
+    "sla_attainment": 0.62,
+    "reopen_rate": 0.14,
+    "missing_evidence_sla": 0.13333333333333333,
+    "evidence_available_sla": 0.6863636363636364,
+    "missing_evidence_resolution_gap_days": 8.662727272727272,
+    "source_refs": [
+      "ASSUMPTIONS",
+      "IMPACT",
+      "QUANT:overall",
+      "QUANT:missing_evidence_impact",
+      "CSV"
+    ],
+    "interpretation": "Use unrounded source inputs for calculation. source-backed headline 72000 uses rounded 24.0 minutes; precise sample annualization is 71952. 42.4 is retained as source-backed reported, while precise FTE is 42.3247. Team-minus-active capacity is not waste. Cohorts overlap; associated burden is not causal savings."
+  },
+  "opportunities": [
+    {
+      "id": "O01",
+      "title": "Evidence assembly",
+      "diagnosis_refs": [
+        "F1"
+      ],
+      "source_refs": [
+        "F1",
+        "DOC:01_AP_Dispute_Resolution_SOP.md",
+        "DOC:03_NorthStar_Agreements.md",
+        "DOC:04_Apex_Agreement.md",
+        "DOC:05_Solara_Agreements_and_Email.md",
+        "L3"
+      ],
+      "recommendation_evidence_type": "INFERRED",
+      "primary_type": "HYBRID",
+      "components": [
+        "WORKFLOW_AUTOMATION",
+        "LLM",
+        "HUMAN_JUDGMENT"
+      ],
+      "proposed_intervention": "Retrieve authorized records by stable identifiers; summarize and link relevant passages; analyst verifies sufficiency.",
+      "classification_reason": "An LLM can interpret varied documents; connectors should perform exact retrieval. A unified evidence checklist may solve part of the problem without AI.",
+      "prohibited_action": "LLM must not invent missing receipts, silently select conflicting terms, or certify evidence as authoritative.",
+      "accountable_owner": "AP Operations",
+      "affected_cohort": {
+        "id": "multi_system",
+        "annual_cases": 89280,
+        "scope": "Overlapping baseline exposure; not eligible or addressable volume.",
+        "source_refs": [
+          "L3"
+        ]
+      },
+      "impact": {
+        "status": "UNSIZED",
+        "annual_savings_hours": null,
+        "annual_savings_currency": null,
+        "overlap_group": "AP_DISPUTE_UNIVERSE",
+        "formula": "net_hours = unique_eligible_cases * adoption * (baseline_minutes - intervention_minutes_including_review) / 60 - annual_maintenance_hours",
+        "missing_inputs": [
+          "Task-level baseline and unique eligible cases",
+          "Measured effect including human review and adoption",
+          "Implementation and ongoing cost; capacity-to-cash realization evidence"
+        ],
+        "measurement": "Time spent locating and reading evidence; citation accuracy; analyst correction rate",
+        "associated_burden_hours": 7619,
+        "burden_source_refs": [
+          "L3"
+        ],
+        "cost_assumptions_available": "Sizing assumes 52 FTE, USD 85000/FTE/year and 1700 productive hours/FTE; these imply USD 50/productive hour. Assumptions are not realized savings."
+      },
+      "delivery_stage": "SHADOW_PILOT",
+      "next_step": "Read-only connector pilot and analyst-reviewed evidence packet",
+      "controls": {
+        "calculation_executor": "DETERMINISTIC_SERVICE",
+        "approval_routing_executor": "VERSIONED_RULE_ENGINE",
+        "approval_decision_owner": "AUTHORIZED_HUMAN",
+        "ambiguous_or_high_risk_action": "HOLD_AND_ESCALATE",
+        "llm_can_execute_financial_action": false,
+        "external_action_gate": "Authenticated authorized human approval plus deterministic validation; source-backed has no execution authority",
+        "audit_requirements": [
+          "Source/version references",
+          "Inputs and computed results",
+          "Model suggestion versus human decision",
+          "Actor, timestamps and approval IDs",
+          "Exceptions and overrides"
+        ],
+        "policy_effective_date_check": true,
+        "human_can_override_to_escalate": true,
+        "specialist_review_overrides_amount_threshold": true
+      },
+      "priority": {
+        "tier": "PILOT_FIRST",
+        "rationale": "Control dependency and reversible testing take precedence over gross exposure. O05 and O01 have the largest measured associated-hour lenses; O02 also addresses the largest evidenced delay gap. No additive ROI ranking."
+      }
+    },
+    {
+      "id": "O02",
+      "title": "Missing-evidence intake and follow-up",
+      "diagnosis_refs": [
+        "F2"
+      ],
+      "source_refs": [
+        "F2",
+        "QUANT:missing_evidence_impact",
+        "L2"
+      ],
+      "recommendation_evidence_type": "INFERRED",
+      "primary_type": "HYBRID",
+      "components": [
+        "PROCESS_POLICY_CHANGE",
+        "DETERMINISTIC_LOGIC",
+        "WORKFLOW_AUTOMATION",
+        "HUMAN_JUDGMENT"
+      ],
+      "proposed_intervention": "Define required evidence by case type; check presence; route requests and reminders; human assesses substantive adequacy. Use case-specific evidence requirements: an approved Apex service confirmation can substitute for a goods receipt on installation; documented receiving/system-error exceptions need authorized Receiving confirmation. Keep PENDING INFORMATION time visible.",
+      "classification_reason": "Requirements, timers and assignments are explicit. LLM is unnecessary for checklist presence checks.",
+      "prohibited_action": "Presence is not validity; lack of a receipt must not become proof of non-delivery or automatic rejection.",
+      "accountable_owner": "AP Operations with Receiving",
+      "affected_cohort": {
+        "id": "missing_evidence",
+        "annual_cases": 21600,
+        "scope": "Overlapping baseline exposure; not eligible or addressable volume.",
+        "source_refs": [
+          "L2"
+        ]
+      },
+      "impact": {
+        "status": "UNSIZED",
+        "annual_savings_hours": null,
+        "annual_savings_currency": null,
+        "overlap_group": "AP_DISPUTE_UNIVERSE",
+        "formula": "net_hours = unique_eligible_cases * adoption * (baseline_minutes - intervention_minutes_including_review) / 60 - annual_maintenance_hours",
+        "missing_inputs": [
+          "Task-level baseline and unique eligible cases",
+          "Measured effect including human review and adoption",
+          "Implementation and ongoing cost; capacity-to-cash realization evidence"
+        ],
+        "measurement": "Time waiting for evidence; completeness at intake; SLA by cohort",
+        "associated_burden_hours": 1220,
+        "burden_source_refs": [
+          "L2"
+        ],
+        "cost_assumptions_available": "Sizing assumes 52 FTE, USD 85000/FTE/year and 1700 productive hours/FTE; these imply USD 50/productive hour. Assumptions are not realized savings."
+      },
+      "delivery_stage": "SHADOW_PILOT",
+      "next_step": "Agree evidence owners and checklist; pilot reminder workflow",
+      "controls": {
+        "calculation_executor": "DETERMINISTIC_SERVICE",
+        "approval_routing_executor": "VERSIONED_RULE_ENGINE",
+        "approval_decision_owner": "AUTHORIZED_HUMAN",
+        "ambiguous_or_high_risk_action": "HOLD_AND_ESCALATE",
+        "llm_can_execute_financial_action": false,
+        "external_action_gate": "Authenticated authorized human approval plus deterministic validation; source-backed has no execution authority",
+        "audit_requirements": [
+          "Source/version references",
+          "Inputs and computed results",
+          "Model suggestion versus human decision",
+          "Actor, timestamps and approval IDs",
+          "Exceptions and overrides"
+        ],
+        "policy_effective_date_check": true,
+        "human_can_override_to_escalate": true,
+        "specialist_review_overrides_amount_threshold": true
+      },
+      "priority": {
+        "tier": "PILOT_FIRST",
+        "rationale": "Control dependency and reversible testing take precedence over gross exposure. O05 and O01 have the largest measured associated-hour lenses; O02 also addresses the largest evidenced delay gap. No additive ROI ranking."
+      }
+    },
+    {
+      "id": "O03",
+      "title": "Contract applicability support",
+      "diagnosis_refs": [
+        "F3"
+      ],
+      "source_refs": [
+        "F3",
+        "DOC:03_NorthStar_Agreements.md",
+        "DOC:04_Apex_Agreement.md",
+        "DOC:05_Solara_Agreements_and_Email.md"
+      ],
+      "recommendation_evidence_type": "INFERRED",
+      "primary_type": "HYBRID",
+      "components": [
+        "LLM",
+        "DETERMINISTIC_LOGIC",
+        "HUMAN_JUDGMENT",
+        "PROCESS_POLICY_CHANGE"
+      ],
+      "proposed_intervention": "Extract candidate clauses with citations and dates; deterministic filters enforce verified supplier, SKU, shipment/geography, scope and effective periods. AP may apply clear contractual terms; Procurement resolves conflict, uncertain authority, disputed interpretation or material precedent. Approved rules enter a versioned registry.",
+      "classification_reason": "Language interpretation benefits from AI support. Only approved, unambiguous rules may enter a versioned rule registry. Do not route every clear term to Procurement: commercial policy section 10 permits AP to apply clear terms. Historical cases must use the policy effective for their dates; do not retroactively apply the March 2026 policy.",
+      "prohibited_action": "No model-selected binding interpretation when execution status, applicability, or amendments conflict.",
+      "accountable_owner": "Procurement",
+      "affected_cohort": {
+        "id": "unquantified",
+        "annual_cases": null,
+        "scope": "Overlapping baseline exposure; not eligible or addressable volume.",
+        "source_refs": []
+      },
+      "impact": {
+        "status": "UNSIZED",
+        "annual_savings_hours": null,
+        "annual_savings_currency": null,
+        "overlap_group": "AP_DISPUTE_UNIVERSE",
+        "formula": "net_hours = unique_eligible_cases * adoption * (baseline_minutes - intervention_minutes_including_review) / 60 - annual_maintenance_hours",
+        "missing_inputs": [
+          "Task-level baseline and unique eligible cases",
+          "Measured effect including human review and adoption",
+          "Implementation and ongoing cost; capacity-to-cash realization evidence"
+        ],
+        "measurement": "Clause citation correctness; unresolved-conflict detection; reviewer time",
+        "associated_burden_hours": null,
+        "burden_source_refs": [],
+        "cost_assumptions_available": "Sizing assumes 52 FTE, USD 85000/FTE/year and 1700 productive hours/FTE; these imply USD 50/productive hour. Assumptions are not realized savings."
+      },
+      "delivery_stage": "DESIGN_VALIDATION",
+      "next_step": "Validate the supplier-rule registry and effective-date handling; use contract-term cases as a high-complexity pilot stratum, not as all eligible cases",
+      "controls": {
+        "calculation_executor": "DETERMINISTIC_SERVICE",
+        "approval_routing_executor": "VERSIONED_RULE_ENGINE",
+        "approval_decision_owner": "AUTHORIZED_HUMAN",
+        "ambiguous_or_high_risk_action": "HOLD_AND_ESCALATE",
+        "llm_can_execute_financial_action": false,
+        "external_action_gate": "Authenticated authorized human approval plus deterministic validation; source-backed has no execution authority",
+        "audit_requirements": [
+          "Source/version references",
+          "Inputs and computed results",
+          "Model suggestion versus human decision",
+          "Actor, timestamps and approval IDs",
+          "Exceptions and overrides"
+        ],
+        "policy_effective_date_check": true,
+        "human_can_override_to_escalate": true,
+        "specialist_review_overrides_amount_threshold": true
+      },
+      "priority": {
+        "tier": "CONTROL_PREREQUISITE",
+        "rationale": "Control dependency and reversible testing take precedence over gross exposure. O05 and O01 have the largest measured associated-hour lenses; O02 also addresses the largest evidenced delay gap. No additive ROI ranking."
+      }
+    },
+    {
+      "id": "O04",
+      "title": "Precedent controls",
+      "diagnosis_refs": [
+        "F4"
+      ],
+      "source_refs": [
+        "F4",
+        "DOC:02_Vendor_Commercial_Terms_Policy.md",
+        "CASE:MRG-2026-0018"
+      ],
+      "recommendation_evidence_type": "INFERRED",
+      "primary_type": "HYBRID",
+      "components": [
+        "PROCESS_POLICY_CHANGE",
+        "DETERMINISTIC_LOGIC",
+        "LLM",
+        "HUMAN_JUDGMENT"
+      ],
+      "proposed_intervention": "Require current governing evidence; flag unsupported precedent; optionally summarize similar cases as context.",
+      "classification_reason": "Governance fixes authority; an LLM may aid comparison but past outcomes are not labels for correctness.",
+      "prohibited_action": "Do not train an automatic pay/reject decision on historical dispositions as truth.",
+      "accountable_owner": "AP Quality and Procurement",
+      "affected_cohort": {
+        "id": "unquantified",
+        "annual_cases": null,
+        "scope": "Overlapping baseline exposure; not eligible or addressable volume.",
+        "source_refs": []
+      },
+      "impact": {
+        "status": "UNSIZED",
+        "annual_savings_hours": null,
+        "annual_savings_currency": null,
+        "overlap_group": "AP_DISPUTE_UNIVERSE",
+        "formula": "net_hours = unique_eligible_cases * adoption * (baseline_minutes - intervention_minutes_including_review) / 60 - annual_maintenance_hours",
+        "missing_inputs": [
+          "Task-level baseline and unique eligible cases",
+          "Measured effect including human review and adoption",
+          "Implementation and ongoing cost; capacity-to-cash realization evidence"
+        ],
+        "measurement": "Unsupported-precedent rate in sampled decisions",
+        "associated_burden_hours": null,
+        "burden_source_refs": [],
+        "cost_assumptions_available": "Sizing assumes 52 FTE, USD 85000/FTE/year and 1700 productive hours/FTE; these imply USD 50/productive hour. Assumptions are not realized savings."
+      },
+      "delivery_stage": "SHADOW_PILOT",
+      "next_step": "Introduce source-and-authority field in closure checklist",
+      "controls": {
+        "calculation_executor": "DETERMINISTIC_SERVICE",
+        "approval_routing_executor": "VERSIONED_RULE_ENGINE",
+        "approval_decision_owner": "AUTHORIZED_HUMAN",
+        "ambiguous_or_high_risk_action": "HOLD_AND_ESCALATE",
+        "llm_can_execute_financial_action": false,
+        "external_action_gate": "Authenticated authorized human approval plus deterministic validation; source-backed has no execution authority",
+        "audit_requirements": [
+          "Source/version references",
+          "Inputs and computed results",
+          "Model suggestion versus human decision",
+          "Actor, timestamps and approval IDs",
+          "Exceptions and overrides"
+        ],
+        "policy_effective_date_check": true,
+        "human_can_override_to_escalate": true,
+        "specialist_review_overrides_amount_threshold": true
+      },
+      "priority": {
+        "tier": "EMBEDDED_CONTROL",
+        "rationale": "Control dependency and reversible testing take precedence over gross exposure. O05 and O01 have the largest measured associated-hour lenses; O02 also addresses the largest evidenced delay gap. No additive ROI ranking."
+      }
+    },
+    {
+      "id": "O05",
+      "title": "Closure quality and reopen learning",
+      "diagnosis_refs": [
+        "F5"
+      ],
+      "source_refs": [
+        "F5",
+        "QUANT:reopened_case_profile",
+        "L1"
+      ],
+      "recommendation_evidence_type": "INFERRED",
+      "primary_type": "HYBRID",
+      "components": [
+        "DETERMINISTIC_LOGIC",
+        "WORKFLOW_AUTOMATION",
+        "LLM",
+        "HUMAN_JUDGMENT"
+      ],
+      "proposed_intervention": "Check required evidence, calculation and approval references; draft cited closure notes; human reviews reasoning; log reopen causes.",
+      "classification_reason": "Structured checks catch missing fields; semantic review can help explain a decision but cannot certify correctness.",
+      "prohibited_action": "A complete note does not prove a correct outcome; new evidence must still permit reopening.",
+      "accountable_owner": "AP Quality",
+      "affected_cohort": {
+        "id": "reopened",
+        "annual_cases": 25200,
+        "scope": "Overlapping baseline exposure; not eligible or addressable volume.",
+        "source_refs": [
+          "L1"
+        ]
+      },
+      "impact": {
+        "status": "UNSIZED",
+        "annual_savings_hours": null,
+        "annual_savings_currency": null,
+        "overlap_group": "AP_DISPUTE_UNIVERSE",
+        "formula": "net_hours = unique_eligible_cases * adoption * (baseline_minutes - intervention_minutes_including_review) / 60 - annual_maintenance_hours",
+        "missing_inputs": [
+          "Task-level baseline and unique eligible cases",
+          "Measured effect including human review and adoption",
+          "Implementation and ongoing cost; capacity-to-cash realization evidence"
+        ],
+        "measurement": "Reopen causes; reviewed decision accuracy; total handling including review",
+        "associated_burden_hours": 7919,
+        "burden_source_refs": [
+          "L1"
+        ],
+        "cost_assumptions_available": "Sizing assumes 52 FTE, USD 85000/FTE/year and 1700 productive hours/FTE; these imply USD 50/productive hour. Assumptions are not realized savings."
+      },
+      "delivery_stage": "SHADOW_PILOT",
+      "next_step": "Pilot closure checklist and reviewed note drafts",
+      "controls": {
+        "calculation_executor": "DETERMINISTIC_SERVICE",
+        "approval_routing_executor": "VERSIONED_RULE_ENGINE",
+        "approval_decision_owner": "AUTHORIZED_HUMAN",
+        "ambiguous_or_high_risk_action": "HOLD_AND_ESCALATE",
+        "llm_can_execute_financial_action": false,
+        "external_action_gate": "Authenticated authorized human approval plus deterministic validation; source-backed has no execution authority",
+        "audit_requirements": [
+          "Source/version references",
+          "Inputs and computed results",
+          "Model suggestion versus human decision",
+          "Actor, timestamps and approval IDs",
+          "Exceptions and overrides"
+        ],
+        "policy_effective_date_check": true,
+        "human_can_override_to_escalate": true,
+        "specialist_review_overrides_amount_threshold": true
+      },
+      "priority": {
+        "tier": "PILOT_FIRST",
+        "rationale": "Control dependency and reversible testing take precedence over gross exposure. O05 and O01 have the largest measured associated-hour lenses; O02 also addresses the largest evidenced delay gap. No additive ROI ranking."
+      }
+    },
+    {
+      "id": "O06",
+      "title": "Component reconciliation and calculations",
+      "diagnosis_refs": [
+        "F6"
+      ],
+      "source_refs": [
+        "F6",
+        "DOC:04_Apex_Agreement.md",
+        "CASE:MRG-2026-0139"
+      ],
+      "recommendation_evidence_type": "INFERRED",
+      "primary_type": "HYBRID",
+      "components": [
+        "LLM",
+        "DETERMINISTIC_LOGIC",
+        "HUMAN_JUDGMENT"
+      ],
+      "proposed_intervention": "Propose line/component extraction; human confirms disputed components and governing terms; deterministic service calculates supported/unsupported totals.",
+      "classification_reason": "Ambiguous component interpretation differs from arithmetic. Calculations require fixed precision, units, currency and reproducible inputs.",
+      "prohibited_action": "No LLM arithmetic as system-of-record amount; no splitting the original dispute to reduce approval authority. In MRG-2026-0139, invoice components total $75000 while the header states $48088.38 disputed; supported items total $69000 and freight $6000. The scope relationship is not explained. Require case-owner reconciliation before computing a disputed adjustment or approval route; do not overwrite the original amount with either total.",
+      "accountable_owner": "AP Operations and Finance Controls",
+      "affected_cohort": {
+        "id": "unquantified",
+        "annual_cases": null,
+        "scope": "Overlapping baseline exposure; not eligible or addressable volume.",
+        "source_refs": []
+      },
+      "impact": {
+        "status": "UNSIZED",
+        "annual_savings_hours": null,
+        "annual_savings_currency": null,
+        "overlap_group": "AP_DISPUTE_UNIVERSE",
+        "formula": "net_hours = unique_eligible_cases * adoption * (baseline_minutes - intervention_minutes_including_review) / 60 - annual_maintenance_hours",
+        "missing_inputs": [
+          "Task-level baseline and unique eligible cases",
+          "Measured effect including human review and adoption",
+          "Implementation and ongoing cost; capacity-to-cash realization evidence"
+        ],
+        "measurement": "Reconciliation errors; component review time; amount traceability",
+        "associated_burden_hours": null,
+        "burden_source_refs": [],
+        "cost_assumptions_available": "Sizing assumes 52 FTE, USD 85000/FTE/year and 1700 productive hours/FTE; these imply USD 50/productive hour. Assumptions are not realized savings."
+      },
+      "delivery_stage": "DESIGN_VALIDATION",
+      "next_step": "Validate inputs and reconcile components to original dispute before calculation",
+      "controls": {
+        "calculation_executor": "DETERMINISTIC_SERVICE",
+        "approval_routing_executor": "VERSIONED_RULE_ENGINE",
+        "approval_decision_owner": "AUTHORIZED_HUMAN",
+        "ambiguous_or_high_risk_action": "HOLD_AND_ESCALATE",
+        "llm_can_execute_financial_action": false,
+        "external_action_gate": "Authenticated authorized human approval plus deterministic validation; source-backed has no execution authority",
+        "audit_requirements": [
+          "Source/version references",
+          "Inputs and computed results",
+          "Model suggestion versus human decision",
+          "Actor, timestamps and approval IDs",
+          "Exceptions and overrides"
+        ],
+        "policy_effective_date_check": true,
+        "human_can_override_to_escalate": true,
+        "specialist_review_overrides_amount_threshold": true
+      },
+      "priority": {
+        "tier": "VALIDATE_THEN_PILOT",
+        "rationale": "Control dependency and reversible testing take precedence over gross exposure. O05 and O01 have the largest measured associated-hour lenses; O02 also addresses the largest evidenced delay gap. No additive ROI ranking."
+      }
+    },
+    {
+      "id": "O07",
+      "title": "Escalation routing and decision briefs",
+      "diagnosis_refs": [
+        "F7"
+      ],
+      "source_refs": [
+        "F7",
+        "DOC:01_AP_Dispute_Resolution_SOP.md",
+        "DOC:02_Vendor_Commercial_Terms_Policy.md",
+        "CASE:MRG-2026-0184",
+        "CASE:MRG-2026-0147",
+        "L4",
+        "DOC:03_NorthStar_Agreements.md"
+      ],
+      "recommendation_evidence_type": "INFERRED",
+      "primary_type": "HYBRID",
+      "components": [
+        "DETERMINISTIC_LOGIC",
+        "WORKFLOW_AUTOMATION",
+        "LLM",
+        "HUMAN_JUDGMENT"
+      ],
+      "proposed_intervention": "Rules route known triggers; AI drafts the evidence brief; analysts can escalate any risk; accountable specialists decide.",
+      "classification_reason": "Routing can be mechanized while risk assessment remains with people. Escalation frequency alone does not show waste.",
+      "prohibited_action": "Never suppress an escalation because the model is confident; never optimize escalation count as the sole KPI. NorthStar requires Procurement consultation before final communication for rejection above $100000, material historical-treatment change, or disputed promotion interpretation. Fraud/sanctions/litigation/regulatory concerns route immediately to Finance/Legal/Compliance; tax ambiguity routes to Tax.",
+      "accountable_owner": "AP Team Lead with specialist owners",
+      "affected_cohort": {
+        "id": "escalated",
+        "annual_cases": 51840,
+        "scope": "Overlapping baseline exposure, not intervention eligibility. ESCALATE means recorded final resolution, not every case ever escalated.",
+        "source_refs": [
+          "L4"
+        ]
+      },
+      "impact": {
+        "status": "UNSIZED",
+        "annual_savings_hours": null,
+        "annual_savings_currency": null,
+        "overlap_group": "AP_DISPUTE_UNIVERSE",
+        "formula": "net_hours = unique_eligible_cases * adoption * (baseline_minutes - intervention_minutes_including_review) / 60 - annual_maintenance_hours",
+        "missing_inputs": [
+          "Task-level baseline and unique eligible cases",
+          "Measured effect including human review and adoption",
+          "Implementation and ongoing cost; capacity-to-cash realization evidence"
+        ],
+        "measurement": "Routing accuracy; time to accountable owner; missed-risk rate",
+        "associated_burden_hours": 5092,
+        "burden_source_refs": [
+          "L4"
+        ],
+        "cost_assumptions_available": "Sizing assumes 52 FTE, USD 85000/FTE/year and 1700 productive hours/FTE; these imply USD 50/productive hour. Assumptions are not realized savings."
+      },
+      "delivery_stage": "SHADOW_PILOT",
+      "next_step": "Agree escalation matrix and pilot structured briefs",
+      "controls": {
+        "calculation_executor": "DETERMINISTIC_SERVICE",
+        "approval_routing_executor": "VERSIONED_RULE_ENGINE",
+        "approval_decision_owner": "AUTHORIZED_HUMAN",
+        "ambiguous_or_high_risk_action": "HOLD_AND_ESCALATE",
+        "llm_can_execute_financial_action": false,
+        "external_action_gate": "Authenticated authorized human approval plus deterministic validation; source-backed has no execution authority",
+        "audit_requirements": [
+          "Source/version references",
+          "Inputs and computed results",
+          "Model suggestion versus human decision",
+          "Actor, timestamps and approval IDs",
+          "Exceptions and overrides"
+        ],
+        "policy_effective_date_check": true,
+        "human_can_override_to_escalate": true,
+        "specialist_review_overrides_amount_threshold": true
+      },
+      "priority": {
+        "tier": "PILOT_FIRST",
+        "rationale": "Control dependency and reversible testing take precedence over gross exposure. O05 and O01 have the largest measured associated-hour lenses; O02 also addresses the largest evidenced delay gap. No additive ROI ranking."
+      }
+    },
+    {
+      "id": "O08",
+      "title": "Resolve Solara 2026 freight authority gap",
+      "diagnosis_refs": [
+        "C1"
+      ],
+      "source_refs": [
+        "C1",
+        "DOC:05_Solara_Agreements_and_Email.md"
+      ],
+      "recommendation_evidence_type": "INFERRED",
+      "primary_type": "HYBRID",
+      "components": [
+        "HUMAN_JUDGMENT",
+        "PROCESS_POLICY_CHANGE"
+      ],
+      "proposed_intervention": "Procurement owns obtaining executed documentation or an authorized documented decision, with Legal confirmation as required by C1; records scope and effective date; keeps case pending until authority exists.",
+      "classification_reason": "This is missing commercial authority, not a text-generation problem. No LLM is necessary to decide treatment.",
+      "prohibited_action": "No extrapolation from old agreements, informal email, generic policy or prior payments to settle 2026 freight. Do not silently revert to FCA or apply the unsigned 4% fee/$1000 threshold; the expiry clause, continuation email and unsigned draft require Procurement / Legal confirmation together.",
+      "accountable_owner": "Procurement",
+      "affected_cohort": {
+        "id": "unquantified",
+        "annual_cases": null,
+        "scope": "Overlapping baseline exposure; not eligible or addressable volume.",
+        "source_refs": []
+      },
+      "impact": {
+        "status": "UNSIZED",
+        "annual_savings_hours": null,
+        "annual_savings_currency": null,
+        "overlap_group": "AP_DISPUTE_UNIVERSE",
+        "formula": "net_hours = unique_eligible_cases * adoption * (baseline_minutes - intervention_minutes_including_review) / 60 - annual_maintenance_hours",
+        "missing_inputs": [
+          "Task-level baseline and unique eligible cases",
+          "Measured effect including human review and adoption",
+          "Implementation and ongoing cost; capacity-to-cash realization evidence"
+        ],
+        "measurement": "Documented authoritative resolution; zero unsupported freight decisions",
+        "associated_burden_hours": null,
+        "burden_source_refs": [],
+        "cost_assumptions_available": "Sizing assumes 52 FTE, USD 85000/FTE/year and 1700 productive hours/FTE; these imply USD 50/productive hour. Assumptions are not realized savings."
+      },
+      "delivery_stage": "OWNER_REMEDIATION",
+      "next_step": "Owner-led document and authority remediation",
+      "controls": {
+        "calculation_executor": "DETERMINISTIC_SERVICE",
+        "approval_routing_executor": "VERSIONED_RULE_ENGINE",
+        "approval_decision_owner": "AUTHORIZED_HUMAN",
+        "ambiguous_or_high_risk_action": "HOLD_AND_ESCALATE",
+        "llm_can_execute_financial_action": false,
+        "external_action_gate": "Authenticated authorized human approval plus deterministic validation; source-backed has no execution authority",
+        "audit_requirements": [
+          "Source/version references",
+          "Inputs and computed results",
+          "Model suggestion versus human decision",
+          "Actor, timestamps and approval IDs",
+          "Exceptions and overrides"
+        ],
+        "policy_effective_date_check": true,
+        "human_can_override_to_escalate": true,
+        "specialist_review_overrides_amount_threshold": true
+      },
+      "priority": {
+        "tier": "CONTROL_PREREQUISITE",
+        "rationale": "Control dependency and reversible testing take precedence over gross exposure. O05 and O01 have the largest measured associated-hour lenses; O02 also addresses the largest evidenced delay gap. No additive ROI ranking."
+      }
+    },
+    {
+      "id": "O09",
+      "title": "Approval eligibility and routing",
+      "diagnosis_refs": [
+        "P5"
+      ],
+      "source_refs": [
+        "P5",
+        "DOC:01_AP_Dispute_Resolution_SOP.md",
+        "DOC:02_Vendor_Commercial_Terms_Policy.md",
+        "DOC:03_NorthStar_Agreements.md",
+        "DOC:04_Apex_Agreement.md"
+      ],
+      "recommendation_evidence_type": "INFERRED",
+      "primary_type": "HYBRID",
+      "components": [
+        "DETERMINISTIC_LOGIC",
+        "WORKFLOW_AUTOMATION",
+        "HUMAN_JUDGMENT"
+      ],
+      "proposed_intervention": "Versioned approved authority matrix computes required role from original disputed amount and exceptions; workflow obtains authenticated human approval.",
+      "classification_reason": "Threshold evaluation is deterministic; exercising delegated approval authority is an accountable human action.",
+      "prohibited_action": "LLM cannot set thresholds, grant approval, substitute model confidence for authority, or route on the accepted portion only. At exactly $50000, overlapping source ranges must produce HOLD_FOR_POLICY_CLARIFICATION. Do not manufacture an inclusive/exclusive convention.",
+      "accountable_owner": "Finance Controls",
+      "affected_cohort": {
+        "id": "unquantified",
+        "annual_cases": null,
+        "scope": "Overlapping baseline exposure; not eligible or addressable volume.",
+        "source_refs": []
+      },
+      "impact": {
+        "status": "UNSIZED",
+        "annual_savings_hours": null,
+        "annual_savings_currency": null,
+        "overlap_group": "AP_DISPUTE_UNIVERSE",
+        "formula": "net_hours = unique_eligible_cases * adoption * (baseline_minutes - intervention_minutes_including_review) / 60 - annual_maintenance_hours",
+        "missing_inputs": [
+          "Task-level baseline and unique eligible cases",
+          "Measured effect including human review and adoption",
+          "Implementation and ongoing cost; capacity-to-cash realization evidence"
+        ],
+        "measurement": "Unauthorized closure rate; routing accuracy at boundaries",
+        "associated_burden_hours": null,
+        "burden_source_refs": [],
+        "cost_assumptions_available": "Sizing assumes 52 FTE, USD 85000/FTE/year and 1700 productive hours/FTE; these imply USD 50/productive hour. Assumptions are not realized savings."
+      },
+      "delivery_stage": "DESIGN_VALIDATION",
+      "next_step": "Finance Controls resolves the exact $50000 overlap, confirms currency/FX basis and encodes specialist exceptions; then test the versioned matrix",
+      "controls": {
+        "calculation_executor": "DETERMINISTIC_SERVICE",
+        "approval_routing_executor": "VERSIONED_RULE_ENGINE",
+        "approval_decision_owner": "AUTHORIZED_HUMAN",
+        "ambiguous_or_high_risk_action": "HOLD_AND_ESCALATE",
+        "llm_can_execute_financial_action": false,
+        "external_action_gate": "Authenticated authorized human approval plus deterministic validation; source-backed has no execution authority",
+        "audit_requirements": [
+          "Source/version references",
+          "Inputs and computed results",
+          "Model suggestion versus human decision",
+          "Actor, timestamps and approval IDs",
+          "Exceptions and overrides"
+        ],
+        "policy_effective_date_check": true,
+        "human_can_override_to_escalate": true,
+        "specialist_review_overrides_amount_threshold": true
+      },
+      "priority": {
+        "tier": "CONTROL_PREREQUISITE",
+        "rationale": "Control dependency and reversible testing take precedence over gross exposure. O05 and O01 have the largest measured associated-hour lenses; O02 also addresses the largest evidenced delay gap. No additive ROI ranking."
+      }
+    }
+  ],
+  "burden_lenses": [
+    {
+      "lens": "Reopened cases",
+      "sample_cases": 35,
+      "annualized_cases": 25200.0,
+      "mean_minutes": 40.2,
+      "comparator_minutes": 21.344186046511627,
+      "gap_minutes": 18.855813953488376,
+      "associated_hours_unrounded": 7919.441860465117,
+      "associated_hours_rounded": 7919,
+      "source_reported_hours": 7919,
+      "pass": true
+    },
+    {
+      "lens": "Missing evidence",
+      "sample_cases": 30,
+      "annualized_cases": 21600.0,
+      "mean_minutes": 26.966666666666665,
+      "comparator_minutes": 23.577272727272728,
+      "gap_minutes": 3.389393939393937,
+      "associated_hours_unrounded": 1220.1818181818173,
+      "associated_hours_rounded": 1220,
+      "source_reported_hours": 1220,
+      "pass": true
+    },
+    {
+      "lens": "4+ systems accessed",
+      "sample_cases": 124,
+      "annualized_cases": 89280.0,
+      "mean_minutes": 26.56451612903226,
+      "comparator_minutes": 21.444444444444443,
+      "gap_minutes": 5.120071684587817,
+      "associated_hours_unrounded": 7618.6666666666715,
+      "associated_hours_rounded": 7619,
+      "source_reported_hours": 7619,
+      "pass": true
+    },
+    {
+      "lens": "Escalated cases",
+      "sample_cases": 72,
+      "annualized_cases": 51840.0,
+      "mean_minutes": 28.180555555555557,
+      "comparator_minutes": 22.286516853932586,
+      "gap_minutes": 5.894038701622971,
+      "associated_hours_unrounded": 5092.449438202248,
+      "associated_hours_rounded": 5092,
+      "source_reported_hours": 5092,
+      "pass": true
+    }
+  ]
+}
