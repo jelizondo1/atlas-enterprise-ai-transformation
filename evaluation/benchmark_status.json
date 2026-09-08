@@ -1,0 +1,11 @@
+{
+  "status": "INTEGRATION_READY_LIVE_BENCHMARK_PENDING",
+  "credential_available_at_preparation": false,
+  "live_attempts": 0,
+  "semantic_reviews": 0,
+  "model_requested": null,
+  "model_returned": null,
+  "acceptance_rate": null,
+  "cost_usd": null,
+  "reason": "No API credential in environment; no live request sent. Independent review cannot be performed without an actual draft."
+}
